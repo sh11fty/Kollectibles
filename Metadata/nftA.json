@@ -1,0 +1,10 @@
+{
+  "name": "My Awesome NFT",
+  "description": "This is an amazing NFT created for demonstration purposes.",
+  "image": "https://static-assets.pixelied.com/features/nft-maker/hero-img.png",
+  "attributes": {
+    "color": "blue",
+    "size": "medium",
+    "rarity": "common"
+  }
+}
