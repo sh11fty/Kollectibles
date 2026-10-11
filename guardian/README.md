@@ -25,7 +25,7 @@ route, while leaving Android Settings usable (per your request; see "Strict mode
 | Telegram / X | Package-prefix + label match -> `setApplicationHidden` (cannot launch at all); web domains blocked in browsers |
 | VPN | `no_config_vpn`; every app that declares `VpnService` is hidden; name/package heuristics (vpn, proxy, tor, dns...); tripwire if a VPN network comes up |
 | DNS | Private DNS locked to CleanBrowsing Adult Filter (blocks porn, forces SafeSearch); `no_config_private_dns`; restored if changed |
-| Browsers | Only Chrome allowed (others hidden). Managed policy: URL blocklist (~230 domains), incognito off, SafeSearch + Google SafeSites, DoH off, dev tools off, history can't be deleted |
+| Browsers | Chrome and Brave allowed (all others hidden). Managed policy: URL blocklist (~270 domains, full list in `DOMAINS.txt`), incognito off, SafeSearch + Google SafeSites, DoH off, dev tools off, history can't be deleted |
 | Everything else | Accessibility service scans on-screen text + URLs in **all** apps: blocked domain = instant block, strong keyword = block, 3 mild words = block |
 
 ## The 10 extra protections beyond the brief
@@ -33,7 +33,7 @@ route, while leaving Android Settings usable (per your request; see "Strict mode
 2. **Tamper-proof time**: auto-time forced + `no_config_date_time`, so you cannot clock-skip the 24h wait.
 3. **Self-healing**: 5 min alarm chain + 15 min persisted job + boot receiver re-apply everything; accessibility is re-enabled via `WRITE_SECURE_SETTINGS` if switched off; DNS restored if changed.
 4. **Browser lockdown**: incognito off, SafeSearch/SafeSites, DoH off, history can't be cleared (Chrome / Edge / Brave managed config).
-5. **Browser allow-list**: every other browser (Firefox, Opera, DuckDuckGo, Samsung...) is hidden, since they can't be policy-managed.
+5. **Browser allow-list** (Chrome + Brave): every other browser (Firefox, Opera, DuckDuckGo, Samsung...) is hidden, since they can't be policy-managed.
 6. **Sideload / safe-mode / extra-user blocks**: `no_install_unknown_sources(_globally)`, `no_safe_boot` (safe mode would disable the accessibility scanner), `no_add_user`, `no_add_managed_profile`.
 7. **Install watcher**: a new app is scanned the moment it is installed (VPNs, cloners, Telegram clients, browsers get hidden within seconds).
 8. **Night curfew** (default 23:00-06:00): all browsers plus Reddit/Instagram/Snapchat/TikTok/Discord are hidden.

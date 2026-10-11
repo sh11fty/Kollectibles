@@ -108,12 +108,12 @@ object Blocklists {
     )
 
     /** Browsers allowed by default (they receive managed policies: incognito off, blocklist, safe search). */
-    val BROWSER_ALLOW: List<String> = listOf("com.android.chrome")
+    val BROWSER_ALLOW: List<String> = listOf("com.android.chrome", "com.brave.browser", "com.brave.browser_beta", "com.brave.browser_nightly")
 
     /** Browsers that get managed restrictions pushed. Package -> uses Chrome policy names. */
     val MANAGED_BROWSERS: List<String> = listOf(
         "com.android.chrome", "com.chrome.beta", "com.chrome.dev", "com.chrome.canary",
-        "com.microsoft.emmx", "com.brave.browser"
+        "com.microsoft.emmx", "com.brave.browser", "com.brave.browser_beta", "com.brave.browser_nightly"
     )
 
     /** Never hide these, whatever the scanners say. */
