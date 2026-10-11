@@ -26,6 +26,7 @@ route, while leaving Android Settings usable (per your request; see "Strict mode
 | VPN | `no_config_vpn`; every app that declares `VpnService` is hidden; name/package heuristics (vpn, proxy, tor, dns...); tripwire if a VPN network comes up |
 | DNS | Private DNS locked to CleanBrowsing Adult Filter (blocks porn, forces SafeSearch); `no_config_private_dns`; restored if changed |
 | Browsers | Chrome and Brave allowed (all others hidden). Managed policy: URL blocklist (~304 domains, full list in `DOMAINS.txt`), incognito off, SafeSearch + Google SafeSites, DoH off, dev tools off, history can't be deleted |
+| Online blocklist | Downloads a public adult-domain list (StevenBlack porn hosts, ~60k+ domains) weekly and checks every URL/domain seen on screen against it. Rejects shrunken or tiny downloads; changing the URL needs the unlock. Chrome policy keeps the built-in ~300 (policy size limit); DNS filtering covers the long tail |
 | Everything else | Accessibility service scans on-screen text + URLs in **all** apps: blocked domain = instant block, strong keyword = block, 3 mild words = block |
 
 ## The 10 extra protections beyond the brief

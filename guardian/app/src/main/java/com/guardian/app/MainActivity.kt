@@ -33,6 +33,7 @@ class MainActivity : Activity() {
     private lateinit var etThreshold: EditText
     private lateinit var etDns: EditText
     private lateinit var etWebhook: EditText
+    private lateinit var etRemote: EditText
 
     private val setupCmds: String
         get() = "adb shell dpm set-device-owner $packageName/.GuardianAdminReceiver\n" +
@@ -78,6 +79,14 @@ class MainActivity : Activity() {
         etThreshold = num("Keyword threshold (3 = one strong word or three mild)", Prefs.threshold(this))
         etDns = field("Private DNS host (family filter)", Prefs.dnsHost(this))
         etWebhook = field("Partner alert URL (ntfy.sh/topic, Discord or Slack webhook)", Prefs.webhook(this))
+        etRemote = EditText(this).apply {
+            setText(Prefs.remoteUrlsRaw(this@MainActivity)); minLines = 2; gravity = android.view.Gravity.TOP
+            inputType = InputType.TYPE_CLASS_TEXT or InputType.TYPE_TEXT_FLAG_MULTI_LINE
+        }
+        root.addView(text("Online blocklist URLs (https, hosts or plain format, one per line; refreshed weekly)")); root.addView(etRemote)
+        button("Update online blocklist now") {
+            Thread { val m = RemoteList.refresh(this, true); runOnUiThread { toast(m); refresh() } }.start()
+        }
         button("Save settings") { saveSettings() }
 
         head("Your additions (built-in lists can't be edited)")
@@ -103,7 +112,7 @@ class MainActivity : Activity() {
     override fun onResume() { super.onResume(); refresh() }
 
     private fun refresh() {
-        status.text = Enforcer.status(this)
+        status.text = Enforcer.status(this) + "\n" + RemoteList.status(this)
         gateText.text = Gate.describe(this)
         logText.text = Prefs.log(this).takeLast(25).reversed().joinToString("\n").ifEmpty { "(none)" }
     }
@@ -118,6 +127,7 @@ class MainActivity : Activity() {
         val th = etThreshold.text.toString().toIntOrNull() ?: Prefs.threshold(this)
         val dns = etDns.text.toString().trim().ifEmpty { Prefs.DEFAULT_DNS }
         val hook = etWebhook.text.toString().trim()
+        val remote = etRemote.text.toString().trim()
 
         val weakens = (Prefs.lockTime(this) && !newLock) ||
             (Prefs.strict(this) && !newStrict) ||
@@ -126,12 +136,13 @@ class MainActivity : Activity() {
             cd < Prefs.cooldownHours(this) ||
             th > Prefs.threshold(this) ||
             dns != Prefs.dnsHost(this) ||
+            (remote != Prefs.remoteUrlsRaw(this).trim() && Prefs.remoteUrlsRaw(this).isNotBlank()) ||
             (Prefs.webhook(this).isNotEmpty() && hook != Prefs.webhook(this))
         if (weakens && !Gate.isUnlocked(this)) { toast("Locked: that change weakens protection. Unlock first."); return }
 
         Prefs.setLockTime(this, newLock); Prefs.setStrict(this, newStrict); Prefs.setShield(this, newShield)
         Prefs.setCurfewOn(this, newCurfew); Prefs.setCurfew(this, cs, ce); Prefs.setCooldownHours(this, cd)
-        Prefs.setThreshold(this, th); Prefs.setDnsHost(this, dns); Prefs.setWebhook(this, hook)
+        Prefs.setThreshold(this, th); Prefs.setDnsHost(this, dns); Prefs.setWebhook(this, hook); Prefs.setRemoteUrls(this, remote)
         if (weakens) Alerts.event(this, "SETTINGS_WEAKENED", "settings changed during unlock window")
         Enforcer.applyAsync(this, "settings saved")
         toast("Saved"); refresh()

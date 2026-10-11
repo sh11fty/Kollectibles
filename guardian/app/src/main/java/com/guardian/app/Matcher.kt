@@ -13,6 +13,9 @@ object Matcher {
 
     @Volatile private var cache: Compiled? = null
 
+    /** Large downloaded domain set (already normalized). Swapped atomically by RemoteList. */
+    @Volatile var remote: Set<String> = emptySet()
+
     fun normalize(s: String): String {
         val sb = StringBuilder(s.length)
         for (ch in s.lowercase()) sb.append(LEET[ch] ?: ch)
@@ -52,7 +55,7 @@ object Matcher {
             val labels = m.value.removePrefix("www.").split('.')
             for (i in 0 until labels.size - 1) {
                 val cand = labels.drop(i).joinToString(".")
-                if (cand in c.domains) return Hit("domain", cand)
+                if (cand in c.domains || cand in remote) return Hit("domain", cand)
             }
         }
         var score = 0

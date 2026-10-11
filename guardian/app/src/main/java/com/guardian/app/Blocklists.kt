@@ -159,4 +159,12 @@ object Blocklists {
         "com.reddit.frontpage", "com.instagram.android", "com.snapchat.android", "com.zhiliaoapp.musically",
         "com.ss.android.ugc.trill", "com.discord"
     )
+
+    /** Downloaded lists can contain mistakes; these are never blocked by them. */
+    val NEVER_BLOCK: Set<String> = setOf(
+        "google.com", "gstatic.com", "googleapis.com", "youtube.com", "wikipedia.org", "github.com",
+        "githubusercontent.com", "microsoft.com", "apple.com", "amazon.com", "cloudflare.com", "reddit.com",
+        "facebook.com", "instagram.com", "whatsapp.com", "tiktok.com", "bing.com", "yahoo.com",
+        "cleanbrowsing.org", "nhs.uk", "gov.uk", "bbc.co.uk", "bbc.com", "android.com", "mozilla.org"
+    )
 }
