@@ -36,18 +36,38 @@ SCENES = [
 KOKORO_DIR = os.environ.get("KOKORO_DIR", ".")  # needs kokoro.onnx + voices.bin from
 # https://github.com/thewh1teagle/kokoro-onnx/releases/tag/model-files-v1.0
 _kokoro = None
+# Kokoro only knows English, so Arabic words are fed in as hand-written IPA
+ARABIC = {
+    "Assalamu alaikum": "ʔæsːælˈɑːmʊ ʔælˈaɪkʊm",
+    "Wa alaikum assalam": "wɑʔælˈaɪkʊm ʔæsːælˈɑːm",
+    "Jazakallahu khayran": "dʒæzˈɑːkɑlːˈɑːhʊ χˈaɪrɑn",
+    "Fee amaanillah": "fˈiː ʔæmˈɑːnɪlːˈɑːh",
+    "Alhamdulillah": "ʔælhˈɑmdʊlɪlːˈɑːh",
+    "Bismillah": "bˈɪsmɪlːˈɑːh",
+    "Allah": "ʔɑlːˈɑːh",
+}
 def tts(i, text):
     global _kokoro
-    import soundfile as sf
+    import re, soundfile as sf
     from kokoro_onnx import Kokoro
     if _kokoro is None:
         _kokoro = Kokoro(os.path.join(KOKORO_DIR, "kokoro.onnx"), os.path.join(KOKORO_DIR, "voices.bin"))
+    pat = "(" + "|".join(sorted(ARABIC, key=len, reverse=True)) + ")"
+    chunks, sr = [], 24000
+    for part in re.split(pat, text):
+        if not part.strip(): continue
+        if part in ARABIC:
+            x, sr = _kokoro.create(ARABIC[part], voice="af_heart", speed=0.85, lang="en-us", is_phonemes=True)
+            chunks += [np.zeros(int(.08 * sr), dtype=np.float32), x, np.zeros(int(.08 * sr), dtype=np.float32)]
+        else:
+            x, sr = _kokoro.create(part, voice="af_heart", speed=0.97, lang="en-us")
+            chunks.append(x)
+    samples = np.concatenate(chunks)
     wav = os.path.join(TMP, f"s{i}.wav")
-    samples, sr = _kokoro.create(text, voice="af_heart", speed=0.9, lang="en-us")
     sf.write(wav, samples, sr)
     return wav, len(samples) / sr, sr
 
-PAD_START, PAD_END = 0.8, 1.3
+PAD_START, PAD_END = 0.7, 0.9
 voices = [tts(i, s[1]) for i, s in enumerate(SCENES)]
 durs = [v[1] + PAD_START + PAD_END for v in voices]
 starts = np.cumsum([0] + durs)
