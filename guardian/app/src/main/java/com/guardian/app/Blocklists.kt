@@ -31,6 +31,27 @@ object Blocklists {
         // erotica / dating hookups
         "literotica.com", "asstr.org", "adultfriendfinder.com", "ashleymadison.com", "fling.com", "sex.com",
         "xxx.com", "sexier.com", "tinder.com",
+        // more leak / desi-MMS sites (cross-checked against two public adult blocklists)
+        "kamababa.cam", "kamababa.click", "kamababa.cfd", "kamababa.am.in", "desileaks.in",
+        "hotdesileaks.com", "desikamababa.com", "leak.xxx", "nude.com", "1leak.com",
+        "leak5.com", "thothd.to", "aznude.com", "danude.com", "knudes.com",
+        "leaked.xxx", "leaksx.com", "nunude.com", "okthot.com", "thothd.com",
+        "thothub.su", "xnudes.net", "xxxnude.cc", "anynude.net", "danudes.com",
+        "desinude.me", "erothots.co", "gfleaks.com", "javleak.com", "leakxxx.com",
+        "of2leaks.co", "onlyfams.tv", "pienude.com", "pornude.net", "thenude.com",
+        "thotbay.com", "thotbook.tv", "thothub.org", "thotmax.com", "thotporn.tv",
+        "thotshub.tv", "thottok.com", "xhdnude.com", "camleaks.net", "fotonude.org",
+        "leakhive.com", "leakonly.com", "leakporn.net", "leaktape.com", "leaktube.net",
+        "leaktube.org", "nude-art.net", "1indian.cc", "desibp.com", "desibp.org",
+        "desisex.cc", "hindi6.com", "mydesi.net", "desi-xxx.cc", "desigirl.cc",
+        "desiporn.su", "desisex.xxx", "desivdo.com", "desixxx.org", "desizex.com",
+        "dropmms.com", "dropmms.net", "mallusex.me", "mmsdose.com", "mydesi3.com",
+        "tamilma.com", "tamilsex.in", "tamilxxx.me", "videmms.com", "xchudai.com",
+        "xxxhindi.to", "3gpindian.me", "69indian.com", "ahindian.com", "beegdesi.com",
+        "chudaisex.cc", "desi-cum.com", "desi-porn.me", "desi-xnxx.cc", "desijimo.com",
+        "desimaal.net", "desipapa.com", "desipapa.xxx", "desisexo.com", "desisexy.org",
+        "desitube.org", "desixnxx.net", "goindian.net", "hindi-xxx.cc", "hindiporn.tv",
+        "indianal.com", "indianxxx.su",
         // telegram
         "t.me", "telegram.me", "telegram.org", "telegram.dog", "web.telegram.org", "telegra.ph", "telesco.pe",
         "tgstat.com", "tgstat.ru", "telemetr.io", "tlgrm.me",
@@ -62,6 +83,7 @@ object Blocklists {
         "rule34", "rule 34", "jerk off", "jerking off", "masturbat", "threesome", "orgy", "incest", "bdsm",
         "dildo", "pussy", "deepthroat", "titfuck", "cunnilingus", "fellatio", "ejaculat", "erotic massage",
         "happy ending massage", "escort service", "call girl", "lolicon", "shotacon", "jailbait", "onlyfans leak",
+        "kamababa", "desileaks", "thothub", "desi mms", "viral mms", "leaked mms",
         "fansly leak", "milfs", "xxx videos", "adult video", "adult videos", "hardcore sex", "anal sex",
         "oral sex", "sex scene", "sex scenes", "uncensored sex"
     )
