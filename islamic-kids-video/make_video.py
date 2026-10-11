@@ -36,35 +36,16 @@ SCENES = [
 KOKORO_DIR = os.environ.get("KOKORO_DIR", ".")  # needs kokoro.onnx + voices.bin from
 # https://github.com/thewh1teagle/kokoro-onnx/releases/tag/model-files-v1.0
 _kokoro = None
-# Kokoro narrates in English; Arabic phrases are spoken by a native Arabic Piper voice
-# (https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/vits-piper-ar_JO-kareem-medium.tar.bz2)
-ARABIC_DIR = os.environ.get("ARABIC_DIR", "vits-piper-ar_JO-kareem-medium")
-ARABIC = {
-    "Assalamu alaikum": "السَّلَامُ عَلَيْكُمْ",
-    "Wa alaikum assalam": "وَعَلَيْكُمُ السَّلَامُ",
-    "Jazakallahu khayran": "جَزَاكَ اللَّهُ خَيْرًا",
-    "Fee amaanillah": "فِي أَمَانِ اللَّهِ",
-    "Alhamdulillah": "الْحَمْدُ لِلَّهِ",
-    "Bismillah": "بِسْمِ اللَّهِ",
-    "Allah": "اللَّهُ",
+# Kokoro is English-only, so Arabic words are respelled the way an English speaker would sound them out.
+RESPELL = {
+    "Assalamu alaikum": "Assa laamu alay koom",
+    "Wa alaikum assalam": "Wa alay koom assa laam",
+    "Jazakallahu khayran": "Jaza kal laahu khayran",
+    "Fee amaanillah": "Fee amaa nil laah",
+    "Alhamdulillah": "Alhamdu lil laah",
+    "Bismillah": "Bis mil laah",
+    "Allah": "Al laah",
 }
-_ar = None
-def arabic(text):
-    global _ar
-    import sherpa_onnx
-    if _ar is None:
-        cfg = sherpa_onnx.OfflineTtsConfig(model=sherpa_onnx.OfflineTtsModelConfig(vits=sherpa_onnx.OfflineTtsVitsModelConfig(
-            model=f"{ARABIC_DIR}/ar_JO-kareem-medium.onnx", tokens=f"{ARABIC_DIR}/tokens.txt", data_dir=f"{ARABIC_DIR}/espeak-ng-data",
-            length_scale=1.0), num_threads=2))
-        _ar = sherpa_onnx.OfflineTts(cfg)
-    g = _ar.generate(text, sid=0, speed=1.0)
-    return np.array(g.samples, dtype=np.float32), g.sample_rate
-
-def resample(x, a, b):
-    if a == b: return x
-    t = np.arange(int(len(x) * b / a)) * a / b
-    return np.interp(t, np.arange(len(x)), x).astype(np.float32)
-
 _kokoro = None
 def tts(i, text):
     global _kokoro
@@ -72,19 +53,9 @@ def tts(i, text):
     from kokoro_onnx import Kokoro
     if _kokoro is None:
         _kokoro = Kokoro(os.path.join(KOKORO_DIR, "kokoro.onnx"), os.path.join(KOKORO_DIR, "voices.bin"))
-    pat = "(" + "|".join(sorted(ARABIC, key=len, reverse=True)) + ")"
-    chunks, sr = [], 24000
-    gap = np.zeros(int(.12 * sr), dtype=np.float32)
-    for part in re.split(pat, text):
-        if not part.strip(): continue
-        if part in ARABIC:
-            x, xsr = arabic(ARABIC[part])
-            x = resample(x, xsr, sr); x = x / (np.abs(x).max() + 1e-6) * 0.8
-            chunks += [gap, x, gap]
-        else:
-            x, _ = _kokoro.create(part, voice="am_michael", speed=1.05, lang="en-us")
-            chunks.append(x)
-    samples = np.concatenate(chunks)
+    pat = "(" + "|".join(sorted(RESPELL, key=len, reverse=True)) + ")"
+    text = re.sub(pat, lambda m: RESPELL[m.group(1)], text)
+    samples, sr = _kokoro.create(text, voice="af_heart", speed=0.98, lang="en-us")
     wav = os.path.join(TMP, f"s{i}.wav")
     sf.write(wav, samples, sr)
     return wav, len(samples) / sr, sr
