@@ -1,5 +1,36 @@
 # Guardian
 
+> ## Read this first: what you are getting into
+> Guardian is a self-control app. You install it to stop YOURSELF reaching porn, nude-leak sites, Telegram, X (Twitter) and VPNs, and it is built so that you cannot easily turn it off.
+>
+> WHAT IT DOES
+> - Becomes the phone's Device Owner (set once from a computer with adb). After that Android itself stops you uninstalling it.
+> - Hides the Telegram and X apps (and Telegram clients) so they cannot open at all, and blocks their websites.
+> - Blocks VPNs: VPN configuration is locked, every app that can create a VPN (and apps with vpn/proxy/tor/DNS-changer style names) is hidden, and a VPN connection triggers an alarm.
+> - Locks Private DNS to CleanBrowsing's adult filter, so every app's internet lookups go through it. CleanBrowsing sees your DNS lookups.
+> - Allows only Chrome and Brave. All other browsers are hidden. In Chrome/Brave: about 300 built-in adult domains are blocked, incognito is off, SafeSearch is forced, and history cannot be deleted.
+> - Reads the on-screen text and web addresses of EVERY app through an accessibility service, and sends you to the home screen with a 15-second pause screen when it sees blocked sites or adult keywords. This is processed on the phone only.
+> - Downloads a public adult-domain list from GitHub every week and checks pages against it.
+> - Night curfew (default 23:00-06:00): all browsers plus Reddit, Instagram, Snapchat, TikTok and Discord are hidden.
+> - If you set a partner alert URL (ntfy.sh, Discord or Slack), it sends them short alerts: blocks (app name only, never the page), VPN attempts, accessibility turned off, DNS changes, wrong PIN attempts and unlock requests.
+> - Hides clone/virtual-space and root-tool apps, scans every newly installed app, disables installing from unknown sources, safe mode, adding users and work profiles, and locks the date and time.
+>
+> WHAT IT MEANS FOR YOU
+> - Any change that weakens protection (removing a block, turning a protection off, releasing the app) needs your PIN, then a cooling-off wait (default 24 hours), then the PIN again within 30 minutes. Your partner is alerted at every step. Adding protection is always instant.
+> - Set the PIN together with a trusted person and let THEM keep it. If you forget it, the only way out is a factory reset of the phone.
+> - Work or school VPNs will stop working. Telegram and X apps stay hidden, even if you need them for something legitimate.
+> - It may block harmless pages that contain several adult keywords, or domains on the downloaded list that are wrong.
+> - Android Settings stays fully usable in this version. Strict mode (off by default) additionally blocks factory reset, USB debugging and force-stop.
+>
+> WHAT IT CANNOT STOP
+> - A factory reset from recovery, flashing the phone, another phone or computer, or switching the accessibility service off in Settings (it is re-enabled within about 5 minutes and your partner is told).
+>
+> It collects nothing for any company and has no account. Its only network traffic is the weekly list download, DNS via CleanBrowsing, and the alert URL you choose.
+>
+> Do not continue unless you want these restrictions on this phone.
+
+(The same text is the first screen of the app.)
+
 Self-control app for Android. It runs as **Device Owner** (system-level, not an overlay), so it cannot be
 uninstalled or force-disabled from the normal UI. It blocks adult sites/keywords, Telegram, X and every VPN
 route, while leaving Android Settings usable (per your request; see "Strict mode" to change that).

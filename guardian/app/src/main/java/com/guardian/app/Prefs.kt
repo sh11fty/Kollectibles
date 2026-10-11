@@ -74,6 +74,8 @@ object Prefs {
     fun setDnsEverSet(c: Context) = put(c) { putBoolean("dns_set", true) }
     fun a11yEverOn(c: Context) = b(c, "a11y_on", false)
     fun setA11yEverOn(c: Context) = put(c) { putBoolean("a11y_on", true) }
+    fun introDone(c: Context) = b(c, "intro_done", false)
+    fun setIntroDone(c: Context) = put(c) { putBoolean("intro_done", true) }
     fun lastReport(c: Context) = s(c, "report", "(not applied yet)")
     fun setLastReport(c: Context, v: String) = put(c) { putString("report", v) }
 
