@@ -12,34 +12,42 @@ os.makedirs(TMP, exist_ok=True)
 
 # (spoken text, caption, scene id) -- spoken uses phonetic spellings
 SCENES = [
- ("title", "Assalamu alaikum, little friends! Welcome! Today's story is called, Layla and the Magic Words. Are you ready? Let's go!",
+ ("title", "Assalamu alaikum, little friends! Try using them every day, and watch the smiles grow. Welcome! Today's story is called, Layla and the Magic Words. Are you ready? Let's go! Grab your imagination, and come along with Layla for a very special day.",
   "Layla and the Magic Words"),
- ("morning", "One sunny morning, Layla woke up with a big stretch. The very first thing she said was, Al-hum-doo-lil-lah. That means, All praise and thanks belong to Allah. Thank you Allah, for giving me a brand new day!",
+ ("morning", "One sunny morning, Layla woke up with a big stretch. The very first thing she said was, Alhamdulillah. That means, All praise and thanks belong to Allah. Thank you Allah, for giving me a brand new day! Every morning is a gift from Allah, and we should always say thank you.",
   "Alhamdulillah - Thank you Allah!"),
- ("breakfast", "Mama made a yummy breakfast. Warm bread, honey, and juicy dates. Before Layla took a bite, she said, Bis-mil-lah. That means, In the name of Allah. Can you say it with me? Bis-mil-lah! Wonderful!",
+ ("breakfast", "Mama made a yummy breakfast. Warm bread, honey, and juicy dates. Before Layla took a bite, she said, Bismillah. That means, In the name of Allah. Can you say it with me? Bismillah! Wonderful! Saying Bismillah reminds us that every good thing comes from Allah, so we begin with His name.",
   "Bismillah - In the name of Allah"),
- ("share", "Suddenly, Layla heard a tiny meow. It was Mimi, the little cat, and she was so hungry! Layla shared her breakfast with Mimi. Our Prophet, peace be upon him, taught us to be kind to every living creature. Sharing makes Allah happy, and it makes our hearts happy too!",
+ ("share", "Suddenly, Layla heard a tiny meow. It was Mimi, the little cat, and she was so hungry! Layla shared her breakfast with Mimi. Our Prophet, peace be upon him, taught us to be kind to every living creature. Sharing makes Allah happy, and it makes our hearts happy too! Mimi purred, and Layla giggled. Even a little cat can teach us about being kind.",
   "Be kind to all of Allah's creatures"),
- ("greet", "After breakfast, Layla went outside and saw her neighbor. She smiled and said, As-sa-laa-mu a-lay-kum! That means, peace be upon you. And her neighbor smiled back and said, Wa a-lay-kum us sa-laam! What a lovely way to say hello!",
+ ("greet", "After breakfast, Layla went outside and saw her neighbor. She smiled and said, Assalamu alaikum! That means, peace be upon you. And her neighbor smiled back and said, Wa alaikum assalam! What a lovely way to say hello! Saying salam is a gift we give to everyone we meet, and it spreads love like sunshine.",
   "Assalamu alaikum - Peace be upon you"),
- ("help", "Her neighbor was carrying heavy bags. Layla ran to help. Her neighbor said, Jazak Allahu khayran! That means, may Allah reward you with goodness. Layla felt warm and happy inside. Even a smile is a gift, a sadaqa, in Islam!",
+ ("help", "Her neighbor was carrying heavy bags. Layla ran to help. Her neighbor said, Jazakallahu khayran! That means, may Allah reward you with goodness. Layla felt warm and happy inside. Even a smile is a gift, a sadaqa, in Islam! When we help others, Allah helps us too.",
   "Jazakallahu khayran - May Allah reward you"),
- ("sunset", "The day went by so quickly. As the sun set, the sky turned orange and pink. It was time for Maghrib prayer. Layla and her family stood together to pray and thank Allah for everything. Allah is always with us, and Allah loves us very much.",
+ ("sunset", "The day went by so quickly. As the sun set, the sky turned orange and pink. It was time for Maghrib prayer. Layla and her family stood together to pray and thank Allah for everything. Allah is always with us, and Allah loves us very much. Layla felt calm, safe, and so thankful for her wonderful day.",
   "Allah loves us very much"),
- ("recap", "Let's remember our magic words together! Al-hum-doo-lil-lah, when we are thankful. Bis-mil-lah, before we eat or begin. As-sa-laa-mu a-lay-kum, when we meet someone. And Jazak Allahu khayran, when someone is kind to us. Wonderful job, little friends!",
+ ("recap", "Let's remember our magic words together! Alhamdulillah, when we are thankful. Bismillah, before we eat or begin. Assalamu alaikum, when we meet someone. And Jazakallahu khayran, when someone is kind to us. Wonderful job, little friends!",
   "Our Magic Words"),
- ("bye", "Thank you for learning with us today. Always be kind, always be thankful, and always remember Allah. We love you, and we will see you next time. Fee a-maa-nil-lah! Goodbye!",
+ ("bye", "Thank you for learning with us today. Always be kind, always be thankful, and always remember Allah. We love you, and we will see you next time. Fee amaanillah! Goodbye! May Allah bless you and your family.",
   "Fi amanillah - Goodbye!"),
 ]
 
 # ---------------------------------------------------------------- audio
+KOKORO_DIR = os.environ.get("KOKORO_DIR", ".")  # needs kokoro.onnx + voices.bin from
+# https://github.com/thewh1teagle/kokoro-onnx/releases/tag/model-files-v1.0
+_kokoro = None
 def tts(i, text):
+    global _kokoro
+    import soundfile as sf
+    from kokoro_onnx import Kokoro
+    if _kokoro is None:
+        _kokoro = Kokoro(os.path.join(KOKORO_DIR, "kokoro.onnx"), os.path.join(KOKORO_DIR, "voices.bin"))
     wav = os.path.join(TMP, f"s{i}.wav")
-    subprocess.run(["espeak-ng", "-v", "mb-us1", "-s", "142", "-p", "72", "-g", "4", text, "-w", wav], check=True)
-    with wave.open(wav) as w:
-        return wav, w.getnframes() / w.getframerate(), w.getframerate()
+    samples, sr = _kokoro.create(text, voice="af_heart", speed=0.9, lang="en-us")
+    sf.write(wav, samples, sr)
+    return wav, len(samples) / sr, sr
 
-PAD_START, PAD_END = 0.7, 1.0
+PAD_START, PAD_END = 0.8, 1.3
 voices = [tts(i, s[1]) for i, s in enumerate(SCENES)]
 durs = [v[1] + PAD_START + PAD_END for v in voices]
 starts = np.cumsum([0] + durs)
