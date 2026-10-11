@@ -5,6 +5,9 @@ on:
     paths: ["guardian/**", ".github/workflows/guardian-apk.yml"]
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -23,3 +26,13 @@ jobs:
         with:
           name: guardian-debug-apk
           path: guardian/app/build/outputs/apk/debug/app-debug.apk
+      - uses: softprops/action-gh-release@v2
+        with:
+          tag_name: guardian-latest
+          name: Guardian (latest build)
+          prerelease: true
+          target_commitish: ${{ github.sha }}
+          body: |
+            Debug-signed Guardian APK built from commit ${{ github.sha }}.
+            Read the first screen of the app and guardian/README.md before installing.
+          files: guardian/app/build/outputs/apk/debug/app-debug.apk
