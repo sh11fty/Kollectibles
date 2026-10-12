@@ -104,6 +104,31 @@ export class Engine {
     return { known: k, total: t, fraction: t ? k / t : 0, readable: full, verses: ch.v };
   }
 
+  /** known | learning | new - how well the learner knows the word at global word index ti. */
+  wordState(ti) {
+    const lex = this.lex;
+    const mask = this.mask();
+    const cards = this.state.cards;
+    let all = true;
+    let fresh = false;
+    const check = (id) => {
+      if (mask[id]) return;
+      all = false;
+      const c = cards[id];
+      if (!(c && c.s === srs.STAGE_LEARNING)) fresh = true;
+    };
+    check(lex.prim[ti]);
+    for (const x of lex.sets[lex.rset[ti]]) check(x);
+    if (all) return 'known';
+    return fresh ? 'new' : 'learning';
+  }
+
+  /** True for connecting words (particles, pronouns, demonstratives ...), tinted in the reader. */
+  isConnecting(ti) {
+    const c = this.lex.card(this.lex.prim[ti]);
+    return !!c && (c.c === 'c' || c.c === 'r');
+  }
+
   passageStats(col) {
     return collectionStats(this.lex, this.mask(), col);
   }

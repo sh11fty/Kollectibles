@@ -21,8 +21,8 @@ import kotlin.concurrent.thread
  */
 object Updater {
     private const val TAG = "FahmUpdater"
-    // Only ever download from this project's own releases.
-    private const val ALLOWED_PREFIX = "https://github.com/sh11fty/Kollectibles/releases/download/"
+    // Only ever download from Fahm's own release tags (this repository hosts other apps too).
+    private const val ALLOWED_PREFIX = "https://github.com/sh11fty/Kollectibles/releases/download/fahm-v"
 
     fun canInstall(ctx: Context): Boolean =
         Build.VERSION.SDK_INT < 26 || ctx.packageManager.canRequestPackageInstalls()
