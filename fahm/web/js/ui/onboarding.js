@@ -3,7 +3,8 @@ import { html, useMemo, useState } from './h.js';
 import { useApp } from './ctx.js';
 import { useBack } from './back.js';
 import { Icon } from './icons.js';
-import { Switch } from './components.js';
+import { Switch, VerseWords } from './components.js';
+import { useVerse } from './hooks.js';
 import { GOALS } from '../core/engine.js';
 import { platform } from '../platform.js';
 
@@ -14,11 +15,28 @@ const PACE = {
   15: ['Intense', 'Fastest — 15 minutes'],
 };
 
+/** A taste of where the learner is heading: the first verse of the Quran, word by word. */
+function Taste() {
+  const { engine, lex } = useApp();
+  const vi = lex.verseIndex(1, 1);
+  const d = useVerse(engine, vi);
+  return html`<div class="stack">
+    <div><div class="h1">Where you’re heading</div><div class="muted">The very first verse of the Quran. Each word is built from small pieces — you’ll learn them one by one.</div></div>
+    <div class="card verse-card stack-sm">
+      ${d
+        ? html`<${VerseWords} vi=${vi} data=${d} engine=${engine} opts=${{ hints: 'all', tint: true, translit: true }} center=${true} onWord=${() => {}} />
+               <div class="translation">${d.t}</div>`
+        : html`<div class="center muted" style=${{ padding: '30px' }}>Loading…</div>`}
+    </div>
+    <div class="muted small center">Blue words are the little connecting words. Within your first lessons you’ll understand this verse completely — then a whole surah.</div>
+  </div>`;
+}
+
 export function Onboarding() {
   const app = useApp();
   const { engine, lex, settings } = app;
   const canRemind = platform.isNative || (typeof Notification !== 'undefined');
-  const steps = canRemind ? ['hello', 'pace', 'know', 'remind'] : ['hello', 'pace', 'know'];
+  const steps = canRemind ? ['hello', 'taste', 'pace', 'know', 'remind'] : ['hello', 'taste', 'pace', 'know'];
   const [i, setI] = useState(0);
   const [goal, setGoal] = useState(settings.goalMin || 5);
   const [knownIds, setKnownIds] = useState(() => new Set());
@@ -69,6 +87,7 @@ export function Onboarding() {
             </div>
           </div>`
         : null}
+      ${step === 'taste' ? html`<${Taste} />` : null}
       ${step === 'pace'
         ? html`<div class="stack">
             <div><div class="h1">How much time each day?</div><div class="muted">You can change this any time.</div></div>
@@ -96,7 +115,7 @@ export function Onboarding() {
         : null}
     </div>
     <div class="onb-foot">
-      <button class="btn primary big block" onClick=${next}>${step === 'hello' ? 'Get started' : i === steps.length - 1 ? 'Begin my first lesson' : step === 'know' ? (knownIds.size ? `Continue (${knownIds.size} known)` : 'I’m a beginner') : 'Continue'}</button>
+      <button class="btn primary big block" onClick=${next}>${step === 'hello' ? 'Get started' : step === 'taste' ? 'Show me how' : i === steps.length - 1 ? 'Begin my first lesson' : step === 'know' ? (knownIds.size ? `Continue (${knownIds.size} known)` : 'I’m a beginner') : 'Continue'}</button>
       ${i > 0 ? html`<button class="btn ghost block" onClick=${() => setI(i - 1)}>Back</button>` : null}
     </div>
   </div>`;

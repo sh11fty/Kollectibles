@@ -6,9 +6,13 @@ plugins {
 }
 
 // ---- Versioning -------------------------------------------------------------------------
-// CI passes FAHM_BUILD_NUMBER (the workflow run number). versionCode only ever goes up, which
-// Android requires for an in-place update. Local builds use build number 0.
-val buildNumber = (System.getenv("FAHM_BUILD_NUMBER") ?: "0").toInt()
+// CI passes the build time: FAHM_VERSION_CODE is minutes since 2025-01-01 and FAHM_VERSION_NAME is
+// the date (e.g. 26.10.12.1530). Time only goes forward, so versionCode only ever goes up (Android
+// requires that for an in-place update) - even if the project later moves to another repository.
+val versionCodeEnv: Int = System.getenv("FAHM_VERSION_CODE")?.toIntOrNull() ?: 1
+val versionNameEnv: String = System.getenv("FAHM_VERSION_NAME")?.takeIf { it.isNotBlank() } ?: "0.0.0-dev"
+// GitHub repository ("owner/name") the app looks at for new releases. CI sets it to the repo it runs in.
+val updateRepo: String = System.getenv("FAHM_REPO")?.takeIf { it.isNotBlank() } ?: "sh11fty/Kollectibles"
 
 // ---- Signing ----------------------------------------------------------------------------
 // Every build must be signed with the SAME key or Android refuses to update the installed app.
@@ -17,11 +21,12 @@ val signingProps = Properties().apply {
     val f = rootProject.file("keystore/signing.properties")
     if (f.exists()) f.inputStream().use { load(it) }
 }
-val storePath: String? = System.getenv("FAHM_KEYSTORE_PATH")
+fun env(name: String): String? = System.getenv(name)?.takeIf { it.isNotBlank() }  // CI passes "" for a missing secret
+val storePath: String? = env("FAHM_KEYSTORE_PATH")
     ?: signingProps.getProperty("storeFile")?.let { rootProject.file("keystore/$it").path }
-val storePass: String? = System.getenv("FAHM_KEYSTORE_PASSWORD") ?: signingProps.getProperty("storePassword")
-val keyAliasName: String? = System.getenv("FAHM_KEY_ALIAS") ?: signingProps.getProperty("keyAlias")
-val keyPass: String? = System.getenv("FAHM_KEY_PASSWORD") ?: signingProps.getProperty("keyPassword")
+val storePass: String? = env("FAHM_KEYSTORE_PASSWORD") ?: signingProps.getProperty("storePassword")
+val keyAliasName: String? = env("FAHM_KEY_ALIAS") ?: signingProps.getProperty("keyAlias") ?: "fahm"
+val keyPass: String? = env("FAHM_KEY_PASSWORD") ?: signingProps.getProperty("keyPassword") ?: storePass
 val haveKey = storePath != null && file(storePath).exists() && storePass != null && keyAliasName != null && keyPass != null
 
 android {
@@ -32,8 +37,13 @@ android {
         applicationId = "com.fahm.quran"
         minSdk = 26
         targetSdk = 34
-        versionCode = 100 + buildNumber
-        versionName = "1.0.$buildNumber"
+        versionCode = versionCodeEnv
+        versionName = versionNameEnv
+        buildConfigField("String", "UPDATE_REPO", "\"$updateRepo\"")
+    }
+
+    buildFeatures {
+        buildConfig = true
     }
 
     signingConfigs {

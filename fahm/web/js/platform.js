@@ -9,6 +9,7 @@ export const platform = {
   isNative,
   versionName: () => (N ? N.versionName() : 'web'),
   versionCode: () => (N ? N.versionCode() : 0),
+  updateRepo: () => (N && N.updateRepo ? N.updateRepo() : 'sh11fty/Kollectibles'),
 
   haptic(kind) {
     try {

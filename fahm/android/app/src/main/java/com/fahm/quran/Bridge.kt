@@ -23,6 +23,10 @@ class Bridge(private val a: MainActivity) {
         if (Build.VERSION.SDK_INT >= 28) it.longVersionCode.toInt() else @Suppress("DEPRECATION") it.versionCode
     } ?: 0
 
+    /** "owner/name" of the GitHub repository whose releases carry new versions of this app. */
+    @JavascriptInterface
+    fun updateRepo(): String = BuildConfig.UPDATE_REPO
+
     private fun pkgInfo() = try {
         a.packageManager.getPackageInfo(a.packageName, 0)
     } catch (e: PackageManager.NameNotFoundException) {

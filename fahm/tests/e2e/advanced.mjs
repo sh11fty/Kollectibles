@@ -9,6 +9,7 @@ try {
   await page.waitForSelector('.onb');
   // finish onboarding quickly
   await h.tapText('Get started');
+  await h.tapText('Show me how');
   await h.tapText('Serious');
   await h.tapText('Continue');
   await h.tapText('I’m a beginner');

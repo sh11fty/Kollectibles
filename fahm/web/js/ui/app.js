@@ -127,7 +127,7 @@ export function App({ engine, lex, store }) {
   const checkUpdate = useCallback(async ({ manual = false } = {}) => {
     setUpdate((u) => ({ ...u, checking: true, error: '' }));
     try {
-      const info = await checkForUpdate(platform.versionName());
+      const info = await checkForUpdate(platform.versionName(), { repo: platform.updateRepo() });
       store.get().updateCheck = { at: Date.now(), tag: info ? info.tag : '' };
       setUpdate((u) => ({ ...u, info, checking: false, checkedOnce: true, error: '' }));
     } catch (e) {

@@ -79,6 +79,11 @@ try {
   check((await text()).includes('Understand the Quran'), 'onboarding shows');
   await shot('01-onb-hello');
   await tapText('Get started');
+  await page.waitForSelector('.verse .w');
+  await wait(400);
+  await shot('01b-onb-taste');
+  check((await text()).includes('Where you’re heading'), 'onboarding shows the first verse');
+  await tapText('Show me how');
   await page.waitForSelector('.pick');
   await shot('02-onb-pace');
   await tapText('Regular');

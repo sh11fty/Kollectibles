@@ -179,7 +179,7 @@ a { color: var(--primary); }
 /* ---------- arabic ---------- */
 .ar { font-family: var(--font-ar); direction: rtl; unicode-bidi: isolate; line-height: 1.85; font-feature-settings: 'calt', 'liga', 'kern'; font-variant-ligatures: common-ligatures contextual; text-rendering: optimizeLegibility; }
 .ar-xl { font-size: calc(76px * var(--ar-scale)); line-height: 1.9; }
-.ar-lg { font-size: calc(44px * var(--ar-scale)); line-height: 1.6; }
+.ar-lg { font-size: calc(44px * var(--ar-scale)); line-height: 2; }
 .ar-md { font-size: calc(30px * var(--ar-scale)); }
 .ar-sm { font-size: calc(24px * var(--ar-scale)); line-height: 1.7; }
 .ar-inline { font-family: var(--font-ar); font-size: 1.3em; line-height: 1; direction: rtl; unicode-bidi: isolate; padding: 0 1px; }
@@ -191,8 +191,8 @@ a { color: var(--primary); }
 .wrap { display: contents; }
 .w { display: inline-flex; flex-direction: column; align-items: center; padding: 3px 5px 10px; border-radius: 12px; min-width: 0; position: relative; transition: background 0.2s; text-align: center; }
 .w:active { background: var(--surface2); }
-.w .a { font-family: var(--font-ar); font-size: calc(32px * var(--ar-scale)); line-height: 2.05; color: var(--ink); }
-.w .g { direction: ltr; font-family: var(--font); font-size: 12.5px; line-height: 1.2; color: var(--ink2); margin-top: -4px; max-width: 120px; font-weight: 550; }
+.w .a { font-family: var(--font-ar); font-size: calc(32px * var(--ar-scale)); line-height: 2.2; padding-bottom: 6px; color: var(--ink); }
+.w .g { direction: ltr; font-family: var(--font); font-size: 12.5px; line-height: 1.2; color: var(--ink2); margin-top: 0; max-width: 120px; font-weight: 550; }
 .w .g i { font-style: italic; opacity: 0.6; font-weight: 450; }
 .w .tr { direction: ltr; font-size: 11px; color: var(--ink3); margin-top: 1px; }
 .w .sign { font-family: var(--font-ar); font-size: 20px; color: var(--ink3); align-self: center; margin: 0 -1px; }
@@ -296,9 +296,9 @@ textarea.field { min-height: 120px; resize: vertical; font-size: 13px; font-fami
 .vdot.most { background: var(--gold); }
 
 /* ---------- words ---------- */
-.wordrow { display: flex; align-items: center; gap: 14px; padding: 11px 14px; width: 100%; text-align: left; }
+.wordrow { display: flex; align-items: center; gap: 14px; padding: 8px 14px 12px; width: 100%; text-align: left; }
 .wordrow + .wordrow { border-top: 1px solid var(--line); }
-.wordrow .ar-md { width: 112px; flex: none; text-align: center; line-height: 1.6; }
+.wordrow .ar-md { width: 112px; flex: none; text-align: center; line-height: 1.95; }
 .lvl { display: flex; gap: 3px; margin-top: 4px; }
 .lvl i { width: 14px; height: 5px; border-radius: 3px; background: var(--line); }
 .lvl i.on { background: var(--primary); }
