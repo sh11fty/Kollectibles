@@ -20,11 +20,24 @@ function Translation({ text, always }) {
 
 // ------------------------------------------------------------------------------- list of passages & surahs
 
+/** "2:255" -> verse index, or null. */
+function parseRef(lex, text) {
+  const m = /^\s*(\d{1,3})\s*[:.\s]\s*(\d{1,3})\s*$/.exec(text);
+  if (!m) return null;
+  const s = Number(m[1]);
+  const a = Number(m[2]);
+  if (s < 1 || s > 114 || a < 1 || a > lex.chapters[s - 1].v) return null;
+  return lex.verseIndex(s, a);
+}
+
 export function ReadScreen() {
   const app = useApp();
   const { engine, lex, state } = app;
   const [mode, setMode] = useState('passages');
   const [order, setOrder] = useState('quran');
+  const [ref, setRef] = useState('');
+  const refVi = ref ? parseRef(lex, ref) : null;
+  const last = state.lastRead >= 0 ? state.lastRead : null;
 
   const passages = lex.collections.map((col) => ({ col, st: engine.passageStats(col), done: state.passages[col.id] !== undefined }));
   passages.sort((a, b) => Number(a.done) - Number(b.done) || b.st.fraction - a.st.fraction || lex.collections.indexOf(a.col) - lex.collections.indexOf(b.col));
@@ -34,6 +47,16 @@ export function ReadScreen() {
 
   return html`<div class="stack">
     <${ScreenTitle} title="Read" sub="Tap any word you don’t know yet" />
+    ${last !== null
+      ? html`<button class="card tap row" style=${{ width: '100%', textAlign: 'left' }} onClick=${() => app.openVerse(last)}>
+          <${Icon} name="book" /><div class="grow"><div class="h3">Continue reading</div><div class="muted small">${lex.chapters[lex.verseRef(last)[0] - 1].en} ${lex.verseKey(last)}</div></div><${Icon} name="fwd" size=${18} />
+        </button>`
+      : null}
+    <form class="searchbox" onSubmit=${(e) => { e.preventDefault(); if (refVi !== null) app.openVerse(refVi); }}>
+      <${Icon} name="search" size=${20} />
+      <input class="field" inputmode="numeric" placeholder="Go to a verse, e.g. 2:255" value=${ref} onInput=${(e) => setRef(e.target.value)} aria-label="Go to a verse" />
+      ${refVi !== null ? html`<button type="submit" class="chip on gobtn">Open ${lex.verseKey(refVi)}</button>` : null}
+    </form>
     <div class="seg">
       <button class=${mode === 'passages' ? 'on' : ''} onClick=${() => setMode('passages')}>Passages</button>
       <button class=${mode === 'surahs' ? 'on' : ''} onClick=${() => setMode('surahs')}>All surahs</button>
@@ -177,7 +200,7 @@ export function VerseView({ vi }) {
   const full = known[vi] === total[vi];
   const go = (nvi) => { if (nvi >= 0 && nvi < lex.verseCount) app.replaceTop({ k: 'verse', vi: nvi }); };
 
-  useEffect(() => { setBreakdown(false); }, [vi]);
+  useEffect(() => { setBreakdown(false); app.store.get().lastRead = vi; }, [vi]);
 
   const share = () => {
     if (!d) return;

@@ -118,12 +118,17 @@ export function TokenSheet({ vi, wi, onClose }) {
   const w = d && d.w[wi];
   const [s, a] = lex.verseRef(vi);
   const ti = lex.offsets[vi] + wi;
-  const parts = (w && w[4]) || [];
-  const order = (id) => { const k = parts.findIndex((x) => x[1] === id); return k < 0 ? 99 : k; };
+  // pieces of the word in reading order; a piece with card 0 belongs to the piece before it (e.g. ذَٰ + لِ + كَ)
+  const groups = [];
+  for (const [text, id] of (w && w[4]) || []) {
+    if (id === 0 && groups.length) groups[groups.length - 1].text += text;
+    else groups.push({ text, id });
+  }
+  const order = (id) => { const k = groups.findIndex((x) => x.id === id); return k < 0 ? 99 : k; };
   const ids = lex.reqOf(ti).slice().sort((x, y) => order(x) - order(y));
   const textFor = (id) => {
-    const p = parts.find((x) => x[1] === id);
-    return p ? p[0] : lex.card(id).a;
+    const g = groups.find((x) => x.id === id);
+    return g && g.text ? g.text : lex.card(id).a;
   };
   const missing = ids.filter((id) => !engine.mask()[id]);
 

@@ -102,6 +102,19 @@ jobs:
           path: fahm.apk
           retention-days: 7
 
+      - name: Release notes
+        if: steps.key.outputs.stable == 'true'
+        run: |
+          {
+            echo "What's new: $(git log -1 --pretty=%s)"
+            echo
+            echo "**Install:** download \`fahm.apk\` and open it. Installing over an older Fahm keeps all your progress."
+            echo "**Update:** Fahm checks this page for new versions (Me → Updates) and can install them for you."
+            echo
+            echo "Built from commit ${GITHUB_SHA}. Signing certificate SHA-256 (the same for every release):"
+            echo "\`${{ steps.sig.outputs.fingerprint }}\`"
+          } > release-notes.md
+
       - name: Publish release
         if: steps.key.outputs.stable == 'true'
         uses: softprops/action-gh-release@v2
@@ -111,14 +124,7 @@ jobs:
           target_commitish: ${{ github.sha }}
           make_latest: true
           files: fahm.apk
-          body: |
-            Fahm ${{ steps.ver.outputs.name }} — built from commit ${{ github.sha }}.
-
-            **Install:** download `fahm.apk` and open it. Installing over an older Fahm keeps all your progress.
-            **Update:** Fahm checks this page for new versions (Me → Updates) and can install them for you.
-
-            Signing certificate SHA-256 (the same for every release):
-            `${{ steps.sig.outputs.fingerprint }}`
+          body_path: release-notes.md
 
       - name: Keep the 15 newest Fahm releases
         if: steps.key.outputs.stable == 'true'

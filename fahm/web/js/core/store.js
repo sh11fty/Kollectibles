@@ -38,6 +38,7 @@ export function defaultState(today = dayNum()) {
     versesRead: {},        // verse index -> times read (capstones + reader practice)
     stats: { answered: 0, correct: 0, sessions: 0, bestSpeed: 0 },
     lastOpen: today,
+    lastRead: -1,          // verse index last opened in the reader
     updateCheck: { at: 0, tag: '' },
   };
 }
