@@ -1,0 +1,23 @@
+# Android / Gradle build output
+android/.gradle/
+android/build/
+android/app/build/
+android/local.properties
+*.iml
+.idea/
+
+# Signing material is NOT committed unless the owner explicitly decides to (see README, "Signing key")
+android/keystore/*.jks
+android/keystore/*.keystore
+android/keystore/signing.properties
+android/keystore/*.b64
+
+# Tooling scratch
+tools/.cache/
+tools/node_modules/
+node_modules/
+test-results/
+playwright-report/
+
+__pycache__/
+*.pyc

@@ -1,0 +1,158 @@
+# Curated vocabulary, part 2 (frequency ranks ~163-330). Same format as core1.txt.
+عالَم[N] | عَالَم | world / all creation | n | رَبِّ الْعَالَمِينَ = Lord of all the worlds.
+جَزَى[V] | جَزَى | he rewarded / recompensed | v | يَجْزِي He rewards.
+أَلِيم[N] | أَلِيم | painful | a | عَذَابٌ أَلِيمٌ = a painful punishment.
+وَجْه[N] | وَجْه | face | n | وَجْهُ اللَّهِ = the face (countenance) of Allah.
+أَطاعَ[V] | أَطَاعَ | he obeyed | v | أَطِيعُوا اللَّهَ = obey Allah.
+أَوْحَى[V] | أَوْحَى | he inspired / revealed | v | أَوْحَيْنَا We revealed.
+إِنسان[N] | إِنسَان | human being | n | الْإِنسَانُ = man / the human.
+بَيِّنَة[N] | بَيِّنَة | clear proof | n | الْبَيِّنَاتِ = the clear signs.
+أَشْرَكَ[V] | أَشْرَكَ | he associated partners (with Allah) | v | يُشْرِكُونَ they associate (others with Him).
+عَمَل[N] | عَمَل | deed / action | n | أَعْمَالَهُمْ = their deeds.
+أَلْقَى[V] | أَلْقَى | he threw / cast | v | أَلْقَوْا they threw.
+قَلِيل[N] | قَلِيل | few / little | a | قَلِيلًا = a little.
+قِيامَة[N] | قِيَامَة | the Resurrection | n | يَوْمَ الْقِيَامَةِ = the Day of Resurrection.
+آخَر[N] | آخَر | other / another | a | أُخْرَىٰ = another (f.).
+قُرْءان[N] | قُرْآن | the Quran | n | الْقُرْآنَ = the Quran (literally "the recitation").
+وَعَدَ[V] | وَعَدَ | he promised | v | وَعَدَ اللَّهُ = Allah promised.
+إِبْراهِيم[N] | إِبْرَاهِيم | Ibrahim (Abraham) | p
+أَنفَقَ[V] | أَنفَقَ | he spent (in charity) | v | يُنفِقُونَ they spend.
+لٰكِن[P]+لٰكِنّ[P] | لَٰكِنْ | but / however | c | A contrast: "not X, but Y".
+غَفَرَ[V] | غَفَرَ | he forgave | v | اغْفِرْ لَنَا = forgive us.
+بَيْت[N] | بَيْت | house | n | بُيُوت = houses.
+يَمِين[N] | يَمِين | right hand / oath | n | أَيْمَانُهُمْ = their oaths.
+أَضَلَّ[V] | أَضَلَّ | he led astray | v | يُضِلُّ He lets go astray.
+أُمَّة[N] | أُمَّة | nation / community | n | أُمَّةً وَاحِدَةً = one community.
+أَب[N]+آباء[N] | أَب | father | n | آبَاؤُنَا = our fathers / forefathers.
+أَصابَ[V] | أَصَابَ | he struck / befell | v | أَصَابَكُمْ = befell you.
+أَحْبَبْ[V] | أَحَبَّ | he loved | v | يُحِبُّ He loves.
+ماء[N] | مَاء | water | n | مِنَ السَّمَاءِ مَاءً = water from the sky.
+كَثِير[N] | كَثِير | many / much | a | كَثِيرًا = much / often.
+تابَ[V] | تَابَ | he repented | v | تُوبُوا = repent!
+ابْن[N]+بُنَىّ[N] | ابْن | son | n | بَنِي إِسْرَائِيلَ = Children of Israel (بَنِي = sons/children of).
+نَزَّلَ[V] | نَزَّلَ | he sent down (step by step) | v | نَزَّلْنَا We sent down.
+كَسَبَ[V] | كَسَبَ | he earned | v | بِمَا كَسَبَتْ = for what it earned.
+رَزَقَ[V] | رَزَقَ | he provided (sustenance) | v | رَزَقْنَاهُمْ We provided them.
+تَلَى[V] | تَلَا | he recited / followed | v | تُتْلَىٰ is recited.
+صادِق[N] | صَادِق | truthful | a | الصَّادِقِينَ = the truthful.
+نَصَرَ[V] | نَصَرَ | he helped / gave victory | v | نَصْرُ اللَّهِ = the help of Allah.
+نِساء[N] | نِسَاء | women | n
+قَضَى[V] | قَضَى | he decreed / decided | v | قَضَىٰ أَمْرًا = decreed a matter.
+صَبَرَ[V] | صَبَرَ | he was patient | v | اصْبِرْ = be patient!
+سَيِّئَة[N] | سَيِّئَة | evil deed / bad | n | السَّيِّئَاتِ = the evil deeds.
+نَذِير[N] | نَذِير | warner | n | بَشِيرًا وَنَذِيرًا = a bringer of good news and a warner.
+رَحْمٰن[N] | رَحْمَٰن | the Most Gracious | a | الرَّحْمَٰنِ الرَّحِيمِ = the Most Gracious, the Most Merciful.
+جَرَيْ[V] | جَرَى | it flowed / ran | v | تَجْرِي مِن تَحْتِهَا الْأَنْهَارُ = beneath which rivers flow.
+قَرْيَة[N] | قَرْيَة | town / city | n | الْقَرْيَةِ = the town.
+عَيْن[N] | عَيْن | eye / spring | n | أَعْيُنِهِمْ = their eyes.
+نَهار[N] | نَهَار | day (daylight) | n | اللَّيْلِ وَالنَّهَارِ = the night and the day.
+شَهِيد[N] | شَهِيد | witness | n | وَكَفَىٰ بِاللَّهِ شَهِيدًا = and Allah is enough as a witness.
+مَسَّ[V] | مَسَّ | it touched / afflicted | v | مَسَّهُ الضُّرُّ = hardship touched him.
+وَلَد[N] | وَلَد | child / son | n | أَوْلَادُكُمْ = your children.
+شَدِيد[N] | شَدِيد | severe / strong | a | شَدِيدُ الْعِقَابِ = severe in punishment.
+رِزْق[N] | رِزْق | provision | n | رِزْقًا حَسَنًا = good provision.
+ضَرَبَ[V] | ضَرَبَ | he struck / set forth (a parable) | v | ضَرَبَ اللَّهُ مَثَلًا = Allah sets forth a parable.
+أَمّا[P] | أَمَّا | as for | c | أَمَّا الَّذِينَ آمَنُوا = as for those who believed.
+أَقامَ[V] | أَقَامَ | he established | v | أَقِيمُوا الصَّلَاةَ = establish the prayer.
+نَهَر[N] | نَهْر | river | n | الْأَنْهَارُ = the rivers.
+قاتَلَ[V] | قَاتَلَ | he fought | v | قَاتِلُوا = fight!
+جَمِيع[N] | جَمِيع | all / altogether | c | جَمِيعًا = all together.
+خَرَجَ[V] | خَرَجَ | he went out | v | يَخْرُجُ comes out.
+ضَلَّ[V] | ضَلَّ | he went astray | v | ضَلَّ سَعْيُهُمْ = their effort went astray.
+بَعَثَ[V] | بَعَثَ | he sent / raised up | v | يُبْعَثُونَ they are raised (after death).
+خَلْق[N] | خَلْق | creation | n | خَلْقِ السَّمَاوَاتِ = the creation of the heavens.
+أَجَل[N] | أَجَل | appointed term | n | إِلَىٰ أَجَلٍ مُسَمًّى = until an appointed term.
+مُجْرِم[N] | مُجْرِم | criminal / sinner | n | الْمُجْرِمِينَ = the criminals.
+تَحْت[N] | تَحْت | under / beneath | c | مِن تَحْتِهَا = beneath it.
+أَحْيا[V] | أَحْيَا | he gave life | v | يُحْيِي He gives life.
+بَصِير[N] | بَصِير | All-Seeing | a | سَمِيعٌ بَصِيرٌ = All-Hearing, All-Seeing.
+أَهْلَكَ[V] | أَهْلَكَ | he destroyed | v | أَهْلَكْنَا We destroyed.
+تَذَكَّرَ[V] | تَذَكَّرَ | he took heed / remembered | v | تَذَكَّرُونَ you take heed.
+مَوْت[N] | مَوْت | death | n | بَعْدَ مَوْتِهَا = after its death.
+عَدُوّ[N] | عَدُوّ | enemy | n | عَدُوٌّ مُبِينٌ = a clear enemy.
+نِعْمَة[N] | نِعْمَة | favour / blessing | n | نِعْمَةَ اللَّهِ = the favour of Allah.
+سُوء[N] | سُوء | evil / harm | n | بِسُوءٍ = with harm.
+افْتَرَى[V] | افْتَرَى | he invented (a lie) | v | افْتَرَىٰ عَلَى اللَّهِ كَذِبًا = invented a lie about Allah.
+مُتَّقي[N] | مُتَّقٍ | one mindful of Allah | n | الْمُتَّقِينَ = the mindful (those who have taqwa).
+غَيْب[N] | غَيْب | the unseen | n | بِالْغَيْبِ = in the unseen.
+زادَ[V] | زَادَ | he increased | v | زَادَهُمْ = increased them.
+عَقَلُ[V] | عَقَلَ | he understood / used reason | v | تَعْقِلُونَ = you use reason.
+كَتَبَ[V] | كَتَبَ | he wrote / prescribed | v | كُتِبَ عَلَيْكُمُ = is prescribed for you.
+أَعْلَم[N] | أَعْلَم | knows best / more knowing | a | اللَّهُ أَعْلَمُ = Allah knows best.
+وَعْد[N] | وَعْد | promise | n | وَعْدَ اللَّهِ = the promise of Allah.
+بَصَر[N] | بَصَر | sight / eyes | n | أَبْصَارِهِمْ = their eyes (sight).
+دار[N] | دَار | home / abode | n | الدَّارِ الْآخِرَةِ = the Home of the Hereafter.
+مُلْك[N] | مُلْك | dominion / kingdom | n | لَهُ مُلْكُ السَّمَاوَاتِ = to Him belongs the dominion of the heavens.
+ساعَة[N] | سَاعَة | the Hour / an hour | n | السَّاعَةُ = the Hour (of Judgement).
+ظَنَّ[V] | ظَنَّ | he thought / assumed | v | ظَنُّوا they thought.
+سَمِيع[N] | سَمِيع | All-Hearing | a | سَمِيعٌ عَلِيمٌ = All-Hearing, All-Knowing.
+شَكَرَ[V] | شَكَرَ | he was thankful | v | تَشْكُرُونَ you are thankful.
+نَبَّأَ[V] | نَبَّأَ | he informed / told news | v | أُنَبِّئُكُم = I will inform you.
+صِراط[N] | صِرَاط | path | n | الصِّرَاطَ الْمُسْتَقِيمَ = the straight path.
+قَدِير[N] | قَدِير | All-Powerful | a | عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ = All-Powerful over everything.
+إِيمان[N] | إِيمَان | faith | n | بَعْدَ إِيمَانِهِمْ = after their faith.
+حَكَمَ[V] | حَكَمَ | he judged | v | يَحْكُمُ He judges.
+يَذَرَ[V] | يَذَرُ | he leaves / lets be | v | ذَرْهُمْ = leave them.
+خَبِير[N] | خَبِير | All-Aware | a | عَلِيمٌ خَبِيرٌ = All-Knowing, All-Aware.
+أَنذَرَ[V] | أَنذَرَ | he warned | v | أَنذَرْتَهُمْ = you warned them.
+شَهِدَ[V] | شَهِدَ | he witnessed / testified | v | شَهِدَ اللَّهُ = Allah testifies.
+مُشْرِك[N] | مُشْرِك | polytheist (one who associates partners with Allah) | n | الْمُشْرِكِينَ = the polytheists.
+حَسِبَ[V] | حَسِبَ | he thought / reckoned | v | أَحَسِبَ النَّاسُ = do the people think...?
+صَدْر[N] | صَدْر | chest / heart | n | فِي صُدُورِهِمْ = in their chests.
+نادَى[V] | نَادَى | he called out | v | نَادَىٰ رَبَّهُ = called out to his Lord.
+مَلَكَتْ[V] | مَلَكَ | he owned / possessed | v | مَلَكَتْ أَيْمَانُكُمْ = what your right hands possess.
+حَمْد[N] | حَمْد | praise | n | الْحَمْدُ لِلَّهِ = all praise is for Allah.
+نُور[N] | نُور | light | n | مِنَ الظُّلُمَاتِ إِلَى النُّورِ = from the darkness to the light.
+إِسْرائِيل[N] | إِسْرَائِيل | Israel (the prophet Yaqub) | p | بَنِي إِسْرَائِيلَ = Children of Israel.
+نُوح[N] | نُوح | Nuh (Noah) | p
+سَبَّحَ[V] | سَبَّحَ | he glorified | v | يُسَبِّحُ لِلَّهِ = glorifies Allah.
+كَلِمَة[N] | كَلِمَة | word | n | كَلِمَاتُ اللَّهِ = the words of Allah.
+جَزاء[N] | جَزَاء | recompense / reward | n | جَزَاءً بِمَا = a reward for what.
+اسْتَطاعَ[V] | اسْتَطَاعَ | he was able | v | لَا يَسْتَطِيعُونَ = they are not able.
+أُدْخِلَ[V] | أَدْخَلَ | he admitted / made enter | v | يُدْخِلُهُمْ = admits them.
+سَوْف[P] | سَوْفَ | will (soon) | c | سَوْفَ يَعْلَمُونَ = they will soon know.
+سَلام[N] | سَلَام | peace | n | سَلَامٌ عَلَيْكُمْ = peace be upon you.
+فَوْق[N] | فَوْق | above / over | c | فَوْقَ أَيْدِيهِمْ = above their hands.
+عَلَّمَ[V] | عَلَّمَ | he taught | v | عَلَّمَ الْإِنسَانَ = taught the human.
+سُبْحان[N] | سُبْحَان | glory be to... | n | سُبْحَانَ اللَّهِ = glory be to Allah.
+بَحْر[N] | بَحْر | sea | n | الْبَحْرِ = the sea.
+حَمَلَ[V] | حَمَلَ | he carried | v | حَمَلْنَاهُمْ = We carried them.
+عَذَّبَ[V] | عَذَّبَ | he punished | v | يُعَذِّبُ He punishes.
+تَرَكَ[V] | تَرَكَ | he left | v | تَرَكْنَا We left.
+اسْتَكْبَرَ[V] | اسْتَكْبَرَ | he was arrogant | v | اسْتَكْبَرُوا they were arrogant.
+اهْتَدَى[V] | اهْتَدَى | he was guided | v | مُهْتَدُونَ = rightly guided.
+أَرَيْ[V] | أَرَى | he showed | v | أَرِنَا = show us.
+وَيْل[N] | وَيْل | woe / ruin | n | وَيْلٌ لِلْمُطَفِّفِينَ = woe to those who give short measure.
+بِئْسَ[V] | بِئْسَ | evil is / wretched is | c | بِئْسَ الْمَصِيرُ = what an evil destination.
+خَشِيَ[V] | خَشِيَ | he feared (with awe) | v | يَخْشَوْنَ they fear.
+بَلَغَ[V] | بَلَغَ | he reached | v | بَلَغَ أَجَلَهُ = reached his term.
+اسْتَغْفَرَ[V] | اسْتَغْفَرَ | he asked forgiveness | v | اسْتَغْفِرُوا = ask forgiveness!
+كَبِير[N] | كَبِير | big / great | a | ذَنبٌ كَبِيرٌ = a great sin.
+تَوَكَّلْ[V] | تَوَكَّلَ | he put his trust (in) | v | فَتَوَكَّلْ عَلَى اللَّهِ = so put your trust in Allah.
+شَرِيك[N] | شَرِيك | partner | n | لَا شَرِيكَ لَهُ = He has no partner.
+اسْم[N] | اسْم | name | n | بِسْمِ اللَّهِ = in the name of Allah.
+أَلا[P] | أَلَا | beware! / indeed | c | Wakes the listener up: أَلَا إِنَّ = indeed!
+إِذْن[N] | إِذْن | permission | n | بِإِذْنِ اللَّهِ = by Allah's permission.
+مُسْلِم[N] | مُسْلِم | Muslim (one who submits) | n | الْمُسْلِمِينَ = the Muslims.
+ماتَ[V] | مَاتَ | he died | v | يَمُوتُ he dies.
+حَرَّمَ[V] | حَرَّمَ | he forbade / made unlawful | v | حُرِّمَتْ = was made unlawful.
+حِساب[N] | حِسَاب | reckoning | n | يَوْمَ الْحِسَابِ = the Day of Reckoning.
+جَبَل[N] | جَبَل | mountain | n | الْجِبَالَ = the mountains.
+بُشِّرَ[V] | بَشَّرَ | he gave good news | v | بَشِّرْ = give good news!
+مَيِّت[N] | مَيِّت | dead | a | الْمَيِّتَ = the dead.
+مُحْسِن[N] | مُحْسِن | doer of good | n | الْمُحْسِنِينَ = those who do good.
+رَضِيَ[V] | رَضِيَ | he was pleased | v | رَضِيَ اللَّهُ عَنْهُمْ = Allah is pleased with them.
+مَعْرُوف[N] | مَعْرُوف | what is right / kindness | n | بِالْمَعْرُوفِ = in a good way.
+ضَلال[N] | ضَلَال | misguidance / error | n | فِي ضَلَالٍ مُبِينٍ = in clear error.
+مُسْتَقِيم[N] | مُسْتَقِيم | straight | a | صِرَاطٍ مُسْتَقِيمٍ = a straight path.
+فاسِق[N] | فَاسِق | wicked / disobedient | n | الْفَاسِقِينَ = the disobedient.
+يَحْزُن[V] | يَحْزَنُ | he grieves | v | لَا تَحْزَنْ = do not grieve.
+نَجَّى[V] | نَجَّى | he saved / rescued | v | أَنجَيْنَاكُمْ = We saved you.
+كُفْر[N] | كُفْر | disbelief | n | بِالْكُفْرِ = with disbelief.
+حَشَرَ[V] | حَشَرَ | he gathered | v | يُحْشَرُونَ they are gathered.
+ذَنب[N] | ذَنْب | sin | n | ذُنُوبَنَا = our sins.
+بَشَر[N] | بَشَر | human being | n | بَشَرٌ مِثْلُنَا = a human like us.
+صَدَّ[V] | صَدَّ | he turned (people) away / hindered | v | يَصُدُّونَ عَن سَبِيلِ اللَّهِ = they hinder from the way of Allah.
+سُلْطان[N] | سُلْطَان | authority / clear proof | n | بِغَيْرِ سُلْطَانٍ = without any authority (proof).
+رَدَّ[V] | رَدَّ | he returned / sent back | v | يُرَدُّونَ = they are returned.
+أَحْسَن[N] | أَحْسَن | best / better | a | أَحْسَنُ عَمَلًا = best in deeds.

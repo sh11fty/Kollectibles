@@ -1,0 +1,101 @@
+# Curated vocabulary, part 5 (frequency ranks ~580-700).
+يُبْدِيَ[V] | أَبْدَى | he revealed / disclosed | v
+سَكَنَ[V] | سَكَنَ | he dwelt / was still | v
+شَرِبَ[V] | شَرِبَ | he drank | v
+اعْتَدَى[V] | اعْتَدَى | he transgressed | v | الْمُعْتَدِينَ = the transgressors.
+نَصْرانِيّ[N] | نَصْرَانِيّ | Christian | n | النَّصَارَىٰ = the Christians.
+بُشْرَى[N] | بُشْرَى | good news | n
+مِلَّة[N] | مِلَّة | creed / way of faith | n | مِلَّةَ إِبْرَاهِيمَ = the creed of Ibrahim.
+صَدَقَ[V] | صَدَقَ | he spoke the truth | v
+مُنذِر[N] | مُنذِر | warner | n
+حَلِيم[N] | حَلِيم | Forbearing | a
+وَعَظْ[V] | وَعَظَ | he advised / exhorted | v
+غَلَبُ[V] | غَلَبَ | he overcame | v
+أَتْبَعَ[V] | أَتْبَعَ | he followed up / pursued | v
+قِسْط[N] | قِسْط | justice / fairness | n | بِالْقِسْطِ = with justice.
+بَلاغ[N] | بَلَاغ | delivery (of the message) | n
+غَرَّ[V] | غَرَّ | he deceived | v
+أُوذِيَ[V] | آذَى | he harmed | v
+يَسِير[N] | يَسِير | easy | a
+حَرَج[N] | حَرَج | difficulty / blame | n
+أَخَّرَ[V] | أَخَّرَ | he delayed | v
+شَكّ[N] | شَكّ | doubt | n
+رِجْل[N] | رِجْل | foot / leg | n
+صَنَعُ[V] | صَنَعَ | he made / did | v
+مُسْرِف[N] | مُسْرِف | one who exceeds limits | n
+تَنزِيل[N] | تَنزِيل | revelation (sent down) | n
+لَقُ[V] | لَقِيَ | he met | v | يَلْقَوْنَ they meet.
+خاشِع[N] | خَاشِع | humbly submissive | a
+عَدْل[N] | عَدْل | justice | n | بِالْعَدْلِ = with justice.
+غَضَب[N] | غَضَب | anger | n
+أَخْلَفُ[V] | أَخْلَفَ | he broke (a promise) | v
+لَعْنَة[N] | لَعْنَة | curse | n | لَعْنَةُ اللَّهِ = the curse of Allah.
+مُهِين[N] | مُهِين | humiliating | a | عَذَابٌ مُّهِينٌ = a humiliating punishment.
+مَقام[N] | مَقَام | station / standing place | n
+شاكِر[N] | شَاكِر | grateful | a
+حُدُود[N] | حُدُود | limits (set by Allah) | n | حُدُودُ اللَّهِ = the limits of Allah.
+ابْتِغاء[N] | ابْتِغَاء | seeking (of) | n | ابْتِغَاءَ وَجْهِ اللَّهِ = seeking the face of Allah.
+نَكَحَ[V] | نَكَحَ | he married | v
+كَفَّرَ[V] | كَفَّرَ | he expiated / removed (sins) | v
+صَرَفَ[V] | صَرَفَ | he turned away / diverted | v
+عَدَلَ[V] | عَدَلَ | he was just / equated | v
+أُخْت[N] | أُخْت | sister | n
+ظِلّ[N] | ظِلّ | shade | n
+لَيْت[P] | لَيْتَ | if only / I wish | c | يَا لَيْتَنِي = oh, if only I...
+أَثَر[N] | أَثَر | trace / footsteps | n
+صِدْق[N] | صِدْق | truthfulness | n
+قادِر[N] | قَادِر | able / capable | a
+كَشَفَ[V] | كَشَفَ | he removed (harm) / uncovered | v
+تَعالَى[V] | تَعَالَى | he is exalted | v | تَعَالَى اللَّهُ = Allah is exalted.
+مَدِينَة[N] | مَدِينَة | city | n
+مُفْلِح[N] | مُفْلِح | successful | a | الْمُفْلِحُونَ = the successful.
+مَرَض[N] | مَرَض | disease / illness | n | فِي قُلُوبِهِم مَّرَضٌ = in their hearts is a disease.
+مَدَّ[V] | مَدَّ | he extended / stretched | v
+سَوَّى[V] | سَوَّى | he fashioned / levelled | v
+أَبَى[V] | أَبَى | he refused | v
+شَفاعَة[N] | شَفَاعَة | intercession | n
+حَرْث[N] | حَرْث | tilth (crops) | n
+حُسْن[N] | حُسْن | goodness / beauty | n
+صَدَقَة[N] | صَدَقَة | charity | n
+ثَلاثَة[N] | ثَلَاثَة | three | n
+قِتال[N] | قِتَال | fighting | n
+تَرَبَّصْ[V] | تَرَبَّصَ | he waited | v
+عِظام[N] | عِظَام | bones | n
+رِضْوان[N] | رِضْوَان | good pleasure (of Allah) | n
+غُلام[N] | غُلَام | boy | n
+ثَواب[N] | ثَوَاب | reward | n
+مَثْوًى[N] | مَثْوًى | abode | n
+غَشِيَ[V] | غَشِيَ | it covered | v
+غالِب[N] | غَالِب | victorious / prevailing | a
+وَرِثَ[V] | وَرِثَ | he inherited | v
+زَعَمَ[V] | زَعَمَ | he claimed | v
+اثْنَيْن[N] | اثْنَان | two | n
+مَكَّ[V] | مَكَّنَ | he established (in power) | v
+بَغْتَة[N] | بَغْتَة | suddenly | c
+نَجْم[N] | نَجْم | star | n | النَّجْمُ = the star.
+يَصِفُ[V] | وَصَفَ | he described | v
+أَسْمَعَ[V] | أَسْمَعَ | he made (someone) hear | v
+حافِظ[N] | حَافِظ | guardian | n | حَافِظُونَ = guardians.
+صَيْحَة[N] | صَيْحَة | a blast / shout | n
+يُوقِنُ[V] | أَيْقَنَ | he was certain | v | يُوقِنُونَ they are certain.
+أَصَمّ[N] | أَصَمّ | deaf | a
+قُطِعَ[V] | قَطَعَ | he cut / severed | v
+أَدْنَى[N] | أَدْنَى | nearer / lower | a
+سَقَى[V] | سَقَى | he gave drink | v
+حاجَّ[V] | حَاجَّ | he argued (with) | v
+أَعْلَن[V] | أَعْلَنَ | he made public | v
+إِحْسان[N] | إِحْسَان | doing good (excellence) | n
+إِسْماعِيل[N] | إِسْمَاعِيل | Ismail (Ishmael) | p
+زَكَّى[V] | زَكَّى | he purified | v
+اصْطَفَى[V] | اصْطَفَى | he chose | v
+يُنظَرُ[V] | أَنظَرَ | he granted respite | v
+لَحْم[N] | لَحْم | meat / flesh | n
+حَبِطَ[V] | حَبِطَ | it became void | v
+أَرْحام[N] | رَحِم | womb / ties of kinship | n | الْأَرْحَامَ = the ties of kinship.
+يَحْذَرُ[V] | حَذِرَ | he was cautious | v
+فَقِير[N] | فَقِير | poor / needy | a
+إِنجِيل[N] | إِنجِيل | the Gospel (Injil) | n
+طِين[N] | طِين | clay | n
+أَفْواه[N] | فَم | mouth | n | بِأَفْوَاهِهِمْ = with their mouths.
+عامِل[N] | عَامِل | doer / worker | n
+قَعَدَ[V] | قَعَدَ | he sat / stayed behind | v

@@ -1,0 +1,279 @@
+# Curated vocabulary, part 3 (frequency ranks ~331-620). Same format as core1.txt.
+ذاقُ[V] | ذَاقَ | he tasted | v | ذُوقُوا = taste! (said to those being punished).
+ذَهَبَ[V] | ذَهَبَ | he went | v | اذْهَبْ = go!
+اسْتَوَى[V] | اسْتَوَىٰ | he settled / rose over / was equal | v | ثُمَّ اسْتَوَىٰ عَلَى الْعَرْشِ = then He rose over the Throne.
+سَجَدَ[V] | سَجَدَ | he prostrated | v | اسْجُدُوا = prostrate!
+مَتاع[N] | مَتَاع | enjoyment / provision | n | مَتَاعُ الْحَيَاةِ الدُّنْيَا = the enjoyment of worldly life.
+حِين[N] | حِين | time / a while | c | إِلَىٰ حِينٍ = for a while.
+نَسِيَ[V] | نَسِيَ | he forgot | v
+بَيَّنُ[V] | بَيَّنَ | he made clear | v | يُبَيِّنُ He makes clear.
+إِثْم[N] | إِثْم | sin | n
+نَصِير[N] | نَصِير | helper | n | وَلِيٍّ وَلَا نَصِيرٍ = protector or helper.
+اخْتَلَفَ[V] | اخْتَلَفَ | he differed / disagreed | v | يَخْتَلِفُونَ they differ.
+مُرْسَل[N] | مُرْسَل | one who is sent (messenger) | n | الْمُرْسَلِينَ = the messengers.
+مَرْيَم[N] | مَرْيَم | Maryam (Mary) | p
+فِتْنَة[N] | فِتْنَة | trial / test / persecution | n
+ابْتَغَى[V] | ابْتَغَى | he sought | v | يَبْتَغُونَ they seek.
+أُمّ[N] | أُمّ | mother | n | أُمَّهَاتُكُمْ = your mothers.
+آلاء[N] | آلَاء | favours / bounties | n | فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ = which of your Lord's favours will you both deny?
+قامَ[V] | قَامَ | he stood / rose | v | يَقُومُ he stands.
+فَرِيق[N] | فَرِيق | group / party | n
+حَرام[N] | حَرَام | forbidden / sacred | a | الْمَسْجِدِ الْحَرَامِ = the Sacred Mosque.
+شَمْس[N] | شَمْس | sun | n | الشَّمْسَ وَالْقَمَرَ = the sun and the moon.
+نَعَم[N] | نَعَم | livestock / cattle | n | الْأَنْعَامِ = the cattle.
+كَذِب[N] | كَذِب | lie | n | كَذِبًا = a lie.
+كَلّا[P] | كَلَّا | no! / never! | c | A firm rejection.
+خاسِر[N] | خَاسِر | loser | n | الْخَاسِرِينَ = the losers.
+زَكاة[N] | زَكَاة | zakah (purifying charity) | n | آتُوا الزَّكَاةَ = give the zakah.
+ذُرِّيَّة[N] | ذُرِّيَّة | offspring / descendants | n
+كَفَى[V] | كَفَىٰ | it sufficed / is enough | v | وَكَفَىٰ بِاللَّهِ = and Allah is enough.
+كاذِب[N] | كَاذِب | liar | n | الْكَاذِبِينَ = the liars.
+نَهَى[V] | نَهَى | he forbade | v | يَنْهَىٰ عَنِ الْمُنكَرِ = forbids the wrong.
+عاقِبَة[N] | عَاقِبَة | outcome / end | n | عَاقِبَةُ الظَّالِمِينَ = the end of the wrongdoers.
+أَعْرَضَ[V] | أَعْرَضَ | he turned away | v | أَعْرِضْ عَنْهُمْ = turn away from them.
+حَيْث[N] | حَيْثُ | where | c | مِنْ حَيْثُ لَا يَشْعُرُونَ = from where they do not perceive.
+أَشَدّ[N] | أَشَدّ | stronger / more severe | a | أَشَدُّ حُبًّا = stronger in love.
+نَفَعَ[V] | نَفَعَ | he benefited | v | يَنفَعُ it benefits.
+إِذًا[P] | إِذًا | then / in that case | c
+حَسَنَة[N] | حَسَنَة | good deed | n | الْحَسَنَاتِ = the good deeds.
+واحِد[N]+واحِدَة[N] | وَاحِد | one | a | إِلَٰهٌ وَاحِدٌ = one God.
+طَيِّب[N]+طَيِّبَة[N] | طَيِّب | good / pure | a | الطَّيِّبَاتِ = the good things.
+قُوَّة[N] | قُوَّة | strength / power | n
+وَلَّى[V] | وَلَّى | he turned (away) | v | وَلَّوْا they turned away.
+عاد[N] | عَاد | Aad (the people of Hud) | p
+عَسَى[V] | عَسَىٰ | perhaps / it may be that | c | عَسَىٰ أَن = it may be that.
+شَرّ[N] | شَرّ | evil / bad | n | خَيْرٍ وَشَرٍّ.
+مَلَأ[N] | مَلَأ | chiefs / council of leaders | n | الْمَلَأُ = the chiefs.
+لَبِثَ[V] | لَبِثَ | he stayed / remained | v
+حُكْم[N] | حُكْم | judgement / ruling | n
+ساءَ[V] | سَاءَ | it was bad / evil | v | سَاءَ مَا يَحْكُمُونَ = evil is what they judge.
+كَرِيم[N] | كَرِيم | noble / generous | a | رِزْقٌ كَرِيمٌ = a noble provision.
+أَبْصَرَ[V] | أَبْصَرَ | he saw / perceived | v | يُبْصِرُونَ they see.
+عَهْد[N] | عَهْد | covenant / pledge | n | بِعَهْدِي = My covenant.
+كَأَنّ[P] | كَأَنَّ | as if | c | كَأَنَّهُمْ = as if they.
+رِيح[N] | رِيح | wind | n | الرِّيَاحَ = the winds.
+جُند[N] | جُنْد | soldiers / army | n | جُنُودُ اللَّهِ = the soldiers of Allah.
+عَرْش[N] | عَرْش | throne | n | الْعَرْشِ = the Throne.
+رَجُل[N] | رَجُل | man | n | رِجَالٌ = men.
+نَبَأ[N] | نَبَأ | news / account | n
+أَبَدًا[N] | أَبَدًا | ever / forever | c | خَالِدِينَ فِيهَا أَبَدًا = abiding in it forever.
+سِحْر[N] | سِحْر | magic | n
+مَسْجِد[N] | مَسْجِد | mosque (place of prostration) | n | الْمَسْجِدِ الْحَرَامِ = the Sacred Mosque.
+مَصِير[N] | مَصِير | destination | n | وَإِلَيْكَ الْمَصِيرُ = and to You is the destination.
+أَصْلَحَ[V] | أَصْلَحَ | he reformed / put right | v | أَصْلِحُوا بَيْنَهُمَا = make peace between them.
+مَغْفِرَة[N] | مَغْفِرَة | forgiveness | n
+اسْتَجابَ[V] | اسْتَجَابَ | he responded / answered | v
+أَنَّى[N] | أَنَّىٰ | how? / from where? | c
+رَحِمَ[V] | رَحِمَ | he had mercy | v | تُرْحَمُونَ = you receive mercy.
+أَغْنَتْ[V] | أَغْنَى | it availed / sufficed | v | مَا أَغْنَىٰ عَنْهُ = did not avail him.
+أَصْبَحَ[V] | أَصْبَحَ | he became / reached morning | v
+حَدِيث[N] | حَدِيث | speech / account / news | n
+سَواء[N] | سَوَاء | equal / alike | a | سَوَاءٌ عَلَيْهِمْ = it is the same for them.
+عَفا[V] | عَفَا | he pardoned | v
+باب[N] | بَاب | door / gate | n | الْأَبْوَابِ = the doors.
+عَصا[V] | عَصَى | he disobeyed | v
+غافِل[N] | غَافِل | heedless / unaware | a | الْغَافِلِينَ = the heedless.
+قَدَّمَ[V] | قَدَّمَ | he sent forward | v | مَا قَدَّمَتْ = what it sent ahead.
+أَفْلَحَ[V] | أَفْلَحَ | he succeeded | v | الْمُفْلِحُونَ = the successful.
+جاهَدَ[V] | جَاهَدَ | he strove | v | جَاهِدُوا = strive!
+مَكان[N] | مَكَان | place | n
+مُنافِق[N] | مُنَافِق | hypocrite | n | الْمُنَافِقِينَ = the hypocrites.
+قَمَر[N] | قَمَر | moon | n
+يُوسُف[N] | يُوسُف | Yusuf (Joseph) | p
+لُوط[N] | لُوط | Lut (Lot) | p
+ماذا[N] | مَاذَا | what? | c
+خَوْف[N] | خَوْف | fear | n | لَا خَوْفٌ عَلَيْهِمْ = no fear for them.
+باطِل[N] | بَاطِل | falsehood / vain | n | الْحَقَّ وَالْبَاطِلَ = truth and falsehood.
+آل[N] | آل | family / people of | n | آلَ فِرْعَوْنَ = the people of Pharaoh.
+جَحِيم[N] | جَحِيم | blazing fire (Hell) | n
+شَهادَة[N] | شَهَادَة | testimony / the seen | n | الْغَيْبِ وَالشَّهَادَةِ = the unseen and the seen.
+أَجْمَع[N] | أَجْمَع | all (together) | c | أَجْمَعِينَ = all of them.
+قَرِيب[N] | قَرِيب | near | a
+زَيَّنَ[V] | زَيَّنَ | he made attractive / adorned | v
+امْرَأَت[N] | امْرَأَة | woman / wife | n | امْرَأَتُ فِرْعَوْنَ = the wife of Pharaoh.
+كَيْد[N] | كَيْد | plot / scheme | n
+ثَمُود[N] | ثَمُود | Thamud (the people of Salih) | p
+يَشْعُرُ[V] | يَشْعُرُ | he perceives | v | لَا يَشْعُرُونَ = they do not perceive.
+خَلا[V] | خَلَا | he passed (away) | v | خَلَتْ = passed away.
+مِيثاق[N] | مِيثَاق | covenant | n
+آدَم[N] | آدَم | Adam | p
+عِيسَى[N] | عِيسَىٰ | Isa (Jesus) | p
+جُناح[N] | جُنَاح | blame / sin | n | فَلَا جُنَاحَ عَلَيْهِ = there is no blame on him.
+بَعِيد[N] | بَعِيد | far | a
+بَأْس[N] | بَأْس | might / violence / harm | n
+قَدَرَ[V] | قَدَرَ | he had power / measured | v | يَقْدِرُ He has power / measures out.
+لِسان[N] | لِسَان | tongue / language | n
+بَغَى[V] | بَغَى | he sought / transgressed | v | يَبْغُونَ they seek.
+جادَلُ[V] | جَادَلَ | he argued / disputed | v | يُجَادِلُ disputes.
+إِيّا[N] | إِيَّا | (you) alone | c | إِيَّاكَ نَعْبُدُ = You alone we worship.
+كادَ[V] | كَادَ | he almost (did) | c | يَكَادُ = almost.
+طَعام[N] | طَعَام | food | n
+وَراء[N] | وَرَاء | behind / beyond | c
+حَيّ[N] | حَيّ | alive / living | a | الْحَيُّ الْقَيُّومُ = the Ever-Living, the Sustainer.
+أُنثَى[N] | أُنثَىٰ | female | n | ذَكَرٍ أَوْ أُنثَىٰ = male or female.
+أَكْبَر[N] | أَكْبَر | greater / greatest | a | اللَّهُ أَكْبَرُ = Allah is greater.
+تَوَفَّى[V] | تَوَفَّى | he took (the soul) / caused to die | v | يَتَوَفَّاكُم = takes you in death.
+غَنِيّ[N] | غَنِيّ | self-sufficient / rich | a | اللَّهُ غَنِيٌّ = Allah is Self-Sufficient.
+طائِفَة[N] | طَائِفَة | group | n
+وَكِيل[N] | وَكِيل | guardian / disposer of affairs | n
+لِقاء[N] | لِقَاء | meeting | n | لِقَاءَ رَبِّهِمْ = the meeting with their Lord.
+ظُلُمَة[N] | ظُلُمَات | darknesses | n | الظُّلُمَاتِ = the darknesses.
+سَبْع[N] | سَبْع | seven | n | سَبْعَ سَمَاوَاتٍ = seven heavens.
+إِمّا[P] | إِمَّا | either / whether | c
+ساجِد[N] | سَاجِد | prostrating | a | سُجَّدًا = prostrating.
+بَدَّلَ[V] | بَدَّلَ | he changed / replaced | v
+يَتِيم[N] | يَتِيم | orphan | n | الْيَتَامَىٰ = the orphans.
+مِسْكِين[N] | مِسْكِين | poor person | n | الْمَسَاكِينِ = the poor.
+لَعَنَ[V] | لَعَنَ | he cursed | v
+فُلْك[N] | فُلْك | ship | n
+أَذِنَ[V] | أَذِنَ | he permitted | v
+فَتَنُ[V] | فَتَنَ | he tested / put to trial | v
+قَرْن[N] | قَرْن | generation | n | الْقُرُونِ = the generations.
+سَمْع[N] | سَمْع | hearing | n | السَّمْعَ وَالْبَصَرَ = hearing and sight.
+رَفَعَ[V] | رَفَعَ | he raised | v
+خَلْف[N] | خَلْف | behind | c | مِنْ خَلْفِهِمْ = from behind them.
+بَلَى[P] | بَلَىٰ | yes! (indeed) | c | Answers a negative question with "yes".
+أَسْلَمَ[V] | أَسْلَمَ | he submitted | v | الْإِسْلَامُ = submission.
+دُعاء[N] | دُعَاء | prayer / calling | n
+نَصْر[N] | نَصْر | help / victory | n | نَصْرُ اللَّهِ = the help of Allah.
+يَرْجُوا۟[V] | يَرْجُو | he hopes | v | يَرْجُونَ they hope.
+وَهَبَ[V] | وَهَبَ | he granted / gave as a gift | v | هَبْ لَنَا = grant us.
+جَمَعَ[V] | جَمَعَ | he gathered | v
+لَدَى[N] | لَدَىٰ | with / at / before | c | لَدَيْهِمْ = with them.
+مَكَرَ[V] | مَكَرَ | he plotted | v
+مَأْوَى[N] | مَأْوَىٰ | abode / refuge | n | مَأْوَاهُمُ النَّارُ = their abode is the Fire.
+بَرّ[N] | بَرّ | righteous / dutiful | a | الْأَبْرَارِ = the righteous.
+أَذاقَ[V] | أَذَاقَ | he made (someone) taste | v
+جِنّ[N] | جِنّ | jinn | n | الْجِنِّ وَالْإِنسِ = the jinn and mankind.
+ساحِر[N] | سَاحِر | magician / sorcerer | n
+سَخَّرَ[V] | سَخَّرَ | he made subservient | v | سَخَّرَ لَكُمُ = has subjected to you.
+مُفْسِد[N] | مُفْسِد | one who spreads corruption | n | الْمُفْسِدِينَ = the corrupters.
+اسْتُهْزِئَ[V] | اسْتَهْزَأَ | he mocked | v
+اشْتَرَى[V] | اشْتَرَى | he bought / exchanged | v
+أَعْمَى[N] | أَعْمَىٰ | blind | a
+مَشَ[V] | مَشَى | he walked | v | يَمْشِي walks.
+أَماتَ[V] | أَمَاتَ | he caused to die | v | يُمِيتُ He causes to die.
+كَتَمَ[V] | كَتَمَ | he concealed | v | يَكْتُمُونَ they conceal.
+رُوح[N] | رُوح | spirit | n
+شَهْر[N] | شَهْر | month | n | أَشْهُرٍ = months.
+أَحْسَنَ[V] | أَحْسَنَ | he did good | v | أَحْسِنُوا = do good!
+نَصِيب[N] | نَصِيب | share / portion | n
+كَم[N] | كَمْ | how many? | c
+حَسَن[N] | حَسَن | good / beautiful | a | قَوْلًا حَسَنًا = a good word.
+مُسَمًّى[N] | مُسَمًّى | appointed / named | a | أَجَلٍ مُسَمًّى = an appointed term.
+وَضَعَ[V] | وَضَعَ | he put down / gave birth | v
+شاهِد[N] | شَاهِد | witness | n
+مُكَذِّب[N] | مُكَذِّب | one who denies | n | الْمُكَذِّبِينَ = the deniers.
+ظَنّ[N] | ظَنّ | assumption / suspicion | n
+أَعَدَّ[V] | أَعَدَّ | he prepared | v | أَعَدَّ اللَّهُ لَهُمْ = Allah has prepared for them.
+عَرَفَ[V] | عَرَفَ | he recognised / knew | v | يَعْرِفُونَ they recognise.
+سَعَى[V] | سَعَى | he strove / hurried | v
+كَلَّمَ[V] | كَلَّمَ | he spoke to | v
+حِكْمَة[N] | حِكْمَة | wisdom | n | الْكِتَابَ وَالْحِكْمَةَ = the Book and wisdom.
+صابِر[N] | صَابِر | patient | a | الصَّابِرِينَ = the patient.
+بَلَوْ[V] | بَلَا | he tested | v | لَنَبْلُوَنَّكُمْ = We will surely test you.
+أَحَلَّ[V] | أَحَلَّ | he made lawful | v
+أَمِنَ[V] | أَمِنَ | he felt safe / trusted | v
+عِقاب[N] | عِقَاب | punishment / penalty | n | شَدِيدُ الْعِقَابِ = severe in punishment.
+مَرَّة[N] | مَرَّة | time (once) | n | مَرَّتَيْنِ = twice.
+هارُون[N] | هَارُون | Harun (Aaron) | p
+ظُلْم[N] | ظُلْم | wrongdoing / injustice | n
+قَصَّ[V] | قَصَّ | he narrated / related | v | نَقُصُّ We relate.
+أَقْسَمُ[V] | أَقْسَمَ | he swore | v
+حِزْب[N] | حِزْب | party / faction | n
+أَنشَأَ[V] | أَنشَأَ | he produced / brought into being | v
+حَمِيم[N] | حَمِيم | scalding water / close friend | n
+حَقَّ[V] | حَقَّ | it became due / came true | v | حَقَّ عَلَيْهِمُ الْقَوْلُ = the word became due on them.
+سَبَقَ[V] | سَبَقَ | he preceded | v
+شَجَرَة[N] | شَجَرَة | tree | n
+مُصَدِّق[N] | مُصَدِّق | confirming | a | مُصَدِّقًا لِّمَا = confirming what.
+مُعْرِض[N] | مُعْرِض | one who turns away | n
+يَضُرَّ[V] | يَضُرُّ | he harms | v | لَا يَضُرُّكُمْ = does not harm you.
+أَيْن[N] | أَيْنَ | where? | c
+أَقْرَب[N] | أَقْرَب | nearer / nearest | a
+طَيْر[N] | طَيْر | birds | n
+نَفَخَ[V] | نَفَخَ | he blew | v
+فَوْز[N] | فَوْز | success / triumph | n | الْفَوْزُ الْعَظِيمُ = the great triumph.
+يَفْقَهُ[V] | يَفْقَهُ | he understands | v | لَا يَفْقَهُونَ = they do not understand.
+ضُرّ[N] | ضُرّ | harm / hardship | n
+اسْتَعْجَلَ[V] | اسْتَعْجَلَ | he hurried / sought to hasten | v
+زِينَة[N] | زِينَة | adornment | n
+مَكْر[N] | مَكْر | plotting / scheme | n
+رَيْب[N] | رَيْب | doubt | n | لَا رَيْبَ فِيهِ = no doubt in it.
+أُذُن[N] | أُذُن | ear | n
+أَوْفَى[V] | أَوْفَى | he fulfilled | v | أَوْفُوا = fulfil!
+أَسَرَّ[V] | أَسَرَّ | he concealed / kept secret | v
+تَبَيَّنَ[V] | تَبَيَّنَ | it became clear | v
+مَتَّعْ[V] | مَتَّعَ | he let (someone) enjoy | v
+دابَّة[N] | دَابَّة | creature (that moves) | n
+رَأْس[N] | رَأْس | head | n
+دَرَجَة[N] | دَرَجَة | rank / degree | n
+أَمْسَكَ[V] | أَمْسَكَ | he held / withheld | v
+نِعْمَ[V] | نِعْمَ | excellent is... | c | نِعْمَ الْمَوْلَىٰ = what an excellent protector.
+أُخْفِيَ[V] | أَخْفَى | he concealed / hid | v
+وَفَّى[V] | وَفَّى | he paid in full | v
+عادَ[V] | عَادَ | he returned | v
+ذُكِّرَ[V] | ذَكَّرَ | he reminded | v | ذَكِّرْ = remind!
+مَوْلَى[N] | مَوْلَىٰ | master / protector | n
+تَوْراة[N] | تَوْرَاة | the Torah | n
+لَدُن[N] | لَدُن | from (with) | c | مِن لَّدُنكَ = from You.
+ذَكَر[N] | ذَكَر | male | n
+مُنكَر[N] | مُنكَر | wrong / what is disapproved | n | الْمُنكَرِ = the wrong.
+دُبُر[N] | دُبُر | back | n | أَدْبَارَهُمْ = their backs.
+عالِم[N] | عَالِم | knower | n | عَالِمُ الْغَيْبِ = Knower of the unseen.
+إِنس[N] | إِنس | mankind (humans) | n
+أُعِيدُ[V] | أَعَادَ | he restored / brought back | v
+أَنْعَمَ[V] | أَنْعَمَ | he bestowed favour | v | أَنْعَمْتَ عَلَيْهِمْ = You bestowed favour on them.
+مُهْتَدي[N] | مُهْتَدٍ | rightly guided | a | الْمُهْتَدِينَ = the rightly guided.
+حَوْل[N] | حَوْل | around | c | حَوْلَهَا = around it.
+ثَمَرَة[N] | ثَمَرَة | fruit | n | الثَّمَرَاتِ = the fruits.
+فَضَّلَ[V] | فَضَّلَ | he favoured / preferred | v
+أُغْرِقُ[V] | أَغْرَقَ | he drowned | v
+أَحاطَ[V] | أَحَاطَ | he encompassed | v | أَحَاطَ بِ = encompassed.
+وَدَّ[V] | وَدَّ | he wished / loved | v | وَدُّوا = they wished.
+سُلَيْمان[N] | سُلَيْمَان | Sulayman (Solomon) | p
+أَهْواء[N] | أَهْوَاء | desires (whims) | n | أَهْوَاءَهُمْ = their desires.
+إِسْحاق[N] | إِسْحَاق | Ishaq (Isaac) | p
+انقَلَبَ[V] | انقَلَبَ | he turned back / returned | v
+بَطْن[N] | بَطْن | belly / womb | n
+تَقْوَى[N] | تَقْوَىٰ | mindfulness of Allah (taqwa) | n
+كَرِهَ[V] | كَرِهَ | he disliked | v
+يَتَفَكَّرُ[V] | تَفَكَّرَ | he reflected | v | يَتَفَكَّرُونَ they reflect.
+تُراب[N] | تُرَاب | dust / earth | n
+حَمِيد[N] | حَمِيد | Praiseworthy | a | غَنِيٌّ حَمِيدٌ = Self-Sufficient, Praiseworthy.
+تَأْوِيل[N] | تَأْوِيل | interpretation / final outcome | n
+قائِم[N] | قَائِم | standing | a
+فاحِشَة[N] | فَاحِشَة | immorality | n
+بِنْت[N] | بِنْت | daughter | n | بَنَاتٍ = daughters.
+حُسْنَى[N] | حُسْنَىٰ | the best (f.) | a | الْأَسْمَاءُ الْحُسْنَىٰ = the Most Beautiful Names.
+نَعِيم[N] | نَعِيم | bliss | n | جَنَّاتِ النَّعِيمِ = gardens of bliss.
+فَصَّلَ[V] | فَصَّلَ | he explained in detail | v
+أَدْرَى[V] | أَدْرَى | he made (someone) know | v | وَمَا أَدْرَاكَ = and what will make you know?
+أَنۢبَتَ[V] | أَنبَتَ | he caused to grow | v
+فَتَحَ[V] | فَتَحَ | he opened | v
+قُرْبَى[N] | قُرْبَىٰ | kinship / relatives | n | ذَوِي الْقُرْبَىٰ = relatives.
+أَظْلَم[N] | أَظْلَم | more unjust | a | وَمَنْ أَظْلَمُ = and who is more unjust?
+أَتَمَّ[V] | أَتَمَّ | he completed | v
+آمِن[N] | آمِن | safe / secure | a
+يَعْقُوب[N] | يَعْقُوب | Yaqub (Jacob) | p
+أَلْباب[N] | أَلْبَاب | minds / understanding | n | أُولُو الْأَلْبَابِ = people of understanding.
+انتَهَى[V] | انتَهَى | he desisted / stopped | v
+وَقَى[V] | وَقَى | he protected | v | قِنَا = protect us.
+هاجَرَ[V] | هَاجَرَ | he emigrated | v
+بَسَطَ[V] | بَسَطَ | he spread / extended | v
+داوُد[N] | دَاوُود | Dawud (David) | p
+مَرْجِع[N] | مَرْجِع | return | n | إِلَيْهِ مَرْجِعُكُمْ = to Him is your return.
+فَرِحَ[V] | فَرِحَ | he rejoiced | v
+سُنَّة[N] | سُنَّة | way / established practice | n
+سارَ[V] | سَارَ | he travelled | v | سِيرُوا فِي الْأَرْضِ = travel in the earth.
+مَنَّ[V] | مَنَّ | he bestowed a favour | v
+سَعِير[N] | سَعِير | blazing fire | n
+خَسِرَ[V] | خَسِرَ | he lost | v
+أُفِكَ[V] | أَفَكَ | he turned (someone) away | v | أَنَّىٰ يُؤْفَكُونَ = how are they deluded?
+اسْتَمَعَ[V] | اسْتَمَعَ | he listened | v
+فُؤاد[N] | فُؤَاد | heart (inner) | n
+مِيزان[N] | مِيزَان | scale / balance | n
+قَرَأَ[V] | قَرَأَ | he read / recited | v | اقْرَأْ = read!
+قَدَّرَ[V] | قَدَّرَ | he decreed / measured | v
+أَفْسَدُ[V] | أَفْسَدَ | he spread corruption | v
+كُلَّما[N] | كُلَّمَا | every time / whenever | c

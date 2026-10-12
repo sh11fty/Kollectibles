@@ -1,0 +1,60 @@
+# The learning path. Cards are referenced by their display form (as written in vocab/*.txt)
+# or by a special key (pref:*, pron:*, dem:*).
+#   @unit      | title | subtitle | goal collection id (optional)
+#   - lesson   | ref ; ref ; ref ...
+#   @milestone | title | subtitle | collection ids  -> auto lessons made of the words still missing for those passages
+#   @auto      | n  -> n frequency-ordered units (with the remaining milestones slotted in)
+
+@unit | Al-Fatiha | Understand the surah you say in every prayer | fatiha
+- Little pieces | pref:bi ; pref:al ; pref:li ; pref:wa
+- Allah and His names | اللَّه ; رَبّ ; رَحْمَٰن ; رَحِيم ; عَالَم
+- Name, praise, day | اسْم ; حَمْد ; مَالِك ; يَوْم ; دِين
+- You alone | إِيَّا ; عَبَدَ ; اسْتَعَانَ ; pron:2MS ; pron:1P
+- The straight path | هَدَى ; صِرَاط ; مُسْتَقِيم ; الَّذِي ; عَلَىٰ ; pron:3MP
+- Not those who... | أَنْعَمَ ; غَيْر ; مَغْضُوب ; ضَالّ ; لَا
+
+@unit | The everyday glue | The small words that hold every verse together
+- From, in, to, about | مِنْ ; فِي ; إِلَىٰ ; عَنْ ; مَعَ
+- Indeed, not, never | إِنَّ ; مَا ; لَمْ ; لَنْ ; قَدْ ; بَلْ
+- He, she, you, I | pron:3MS ; pron:3FS ; pron:2MP ; pron:1S
+- This and that | dem:dhalika ; dem:hadha ; dem:hadhihi ; dem:ulaika ; dem:haulai ; dem:tilka
+- Who? What? How? | مَن ; مَاذَا ; كَيْفَ ; أَيْنَ ; هَلْ ; كَمْ ; أَيّ
+- More little pieces | pref:fa ; pref:ka ; pref:la ; pref:sa ; pref:ya ; pref:a
+- And, or, then, but | ثُمَّ ; أَوْ ; أَمْ ; لَٰكِنْ ; حَتَّىٰ ; إِذًا
+- If and when | إِنْ ; إِذَا ; لَوْ ; إِذْ ; لَمَّا ; لَوْلَا
+- That, except, as for | أَنَّ ; أَنْ ; إِلَّا ; أَمَّا ; كُلّ ; بَعْض
+- Before, after, between | بَيْن ; قَبْل ; بَعْد ; عِنْد ; دُون ; تَحْت ; فَوْق
+
+@milestone | The three Quls | Al-Ikhlas, Al-Falaq and An-Nas | ikhlas falaq nas
+
+@unit | Say, be, do | The verbs that drive the stories
+- Said and was | قَالَ ; كَانَ ; آمَنَ ; عَلِمَ ; جَعَلَ ; جَاءَ
+- Doing and seeing | عَمِلَ ; فَعَلَ ; آتَى ; رَأَى ; أَتَى ; شَاءَ
+- Making and sending | خَلَقَ ; أَنزَلَ ; أَرْسَلَ ; أَخَذَ ; أَرَادَ ; اتَّبَعَ
+- Belief and denial | كَفَرَ ; كَذَّبَ ; اتَّقَى ; ظَلَمَ ; سَمِعَ ; أَمَرَ
+- Going and coming | دَخَلَ ; خَرَجَ ; رَجَعَ ; ذَهَبَ ; قَامَ ; أَخْرَجَ
+
+@milestone | Short surahs I | Al-Kawthar, Al-Asr, An-Nasr and Al-Kafirun | kawthar asr nasr kafirun
+
+@unit | People and beings | Who the Quran talks about
+- People | قَوْم ; نَاس ; رَسُول ; نَبِيّ ; مُؤْمِن ; كَافِر
+- Family | أَب ; ابْن ; أَخ ; أُمّ ; زَوْج ; وَلَد
+- Mercy and punishment | رَحْمَة ; عَذَاب ; جَنَّة ; نَار ; جَهَنَّم ; أَجْر
+- Heart and body | قَلْب ; نَفْس ; يَد ; وَجْه ; عَيْن ; صَدْر
+- Unseen | مَلَك ; شَيْطَان ; جِنّ ; إِلَٰه ; عَبْد ; وَلِيّ
+
+@unit | Earth, sky and time | The world the verses describe
+- Sky and earth | أَرْض ; سَمَاء ; مَاء ; شَمْس ; قَمَر ; بَحْر
+- Time | لَيْل ; نَهَار ; سَاعَة ; حِين ; أَبَدًا ; أَجَل
+- Life and death | حَيَاة ; مَوْت ; دُنْيَا ; آخِر ; أَوَّل ; قِيَامَة
+- The Book | كِتَاب ; آيَة ; قُرْآن ; كَلِمَة ; ذِكْر ; حَقّ
+
+@milestone | Short surahs II | Quraysh, Al-Fil, Al-Masad and Al-Ma'un | quraysh fil masad maun
+
+@unit | Allah's names | Describing the One who is described most
+- All-Knowing, All-Wise | عَلِيم ; حَكِيم ; غَفُور ; عَزِيز ; سَمِيع ; بَصِير
+- More attributes | قَدِير ; خَبِير ; كَبِير ; عَظِيم ; حَمِيد ; غَنِيّ
+
+@milestone | Ayat al-Kursi | The Throne Verse | kursi
+
+@auto | 60

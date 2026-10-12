@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Fahm</string>
+    <string name="channel_daily">Daily practice</string>
+    <string name="channel_daily_desc">A gentle reminder to do your short daily session</string>
+</resources>

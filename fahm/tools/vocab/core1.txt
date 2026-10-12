@@ -1,0 +1,152 @@
+# Curated vocabulary, part 1 (frequency ranks 1-170).
+# Format:  key | display | meaning | cat | note
+#   key      lemma[POS] exactly as listed by build_data.py --list (a "+" joins several lemma keys into one card)
+#   display  vocalised citation form shown to the learner
+#   cat      c = connecting word, n = noun, v = verb, a = adjective/description, p = proper name
+#   note     optional one-line hint about how the word behaves in real verses
+مِن[P] | مِنْ | from / of / some of | c | Tiny but everywhere. It can mean "from", "of" or "some of": مِنَ الْمُؤْمِنِينَ = of the believers.
+اللَّه[N] | اللَّه | Allah (God) | n | The most frequent word in the Quran. Often follows a connecting word: بِاللَّهِ = in/by Allah, لِلَّهِ = for/belongs to Allah.
+فِي[P] | فِي | in / inside / among | c | فِيهَا = in it (f.), فِيهِ = in it (m.), فِيهِمْ = among them.
+لا[P] | لَا | no / not / do not | c | Before a verb it can mean "do not!" (a command) or just "not". لَا إِلَٰهَ = there is no god.
+إِنّ[P] | إِنَّ | indeed / verily | c | Adds emphasis and is often left out in English. Pronouns stick to it: إِنَّهُ (indeed he), إِنَّا (indeed we), إِنَّكَ (indeed you).
+قالَ[V] | قَالَ | he said / say! | v | قَالَ he said, قَالُوا they said, قُلْ say!, يَقُولُ he says. Most Quran stories are built on it.
+الَّذِي[N] | الَّذِي | who / which / the one who | c | الَّذِينَ = those who. Links a description to a person: الَّذِينَ آمَنُوا = those who believed.
+عَلَى[P] | عَلَىٰ | on / upon / over / against | c | عَلَيْهِمْ = upon them, عَلَيْكُمْ = upon you.
+ما[N]+ما[P] | مَا | what / that which / not | c | Two jobs: "what / that which" (مَا فِي الْأَرْضِ = what is in the earth) and "not" (مَا هَٰذَا بَشَرًا = this is not a human).
+كانَ[V] | كَانَ | he was / it was / used to be | v | Says what someone or something was or used to be. Sometimes invisible in English.
+رَبّ[N] | رَبّ | Lord / Master / Sustainer | n | رَبِّي my Lord, رَبُّكَ your Lord, رَبَّنَا our Lord.
+مَن[N] | مَن | who / whoever | c | Asks "who?" or means "whoever": مَن يَشَاءُ = whoever He wills.
+إِلَى[P] | إِلَىٰ | to / towards | c | إِلَيْهِ = to Him / to it, إِلَيْكَ = to you.
+إِن[P] | إِنْ | if / not | c | Mostly "if" (إِن كُنتُمْ = if you are). Occasionally "not".
+إِلّا[P] | إِلَّا | except / but / only | c | مَا ... إِلَّا = nothing but / only: مَا هُوَ إِلَّا ذِكْرٌ = it is only a reminder.
+أَن[P] | أَنْ | that / to | c | Links a verb to what came before: أَن يَقُولُوا = that they say.
+آمَنَ[V] | آمَنَ | he believed / had faith | v | آمَنُوا they believed, يُؤْمِنُونَ they believe, مُؤْمِن a believer.
+يَوْم[N] | يَوْم | day | n | يَوْمَ الْقِيَامَةِ = the Day of Resurrection, يَوْمَئِذٍ = on that day.
+عَن[P] | عَنْ | from / about | c | Away from or about: يَسْأَلُونَكَ عَنِ = they ask you about.
+أَرْض[N] | أَرْض | earth / land | n | السَّمَاوَاتِ وَالْأَرْضِ = the heavens and the earth.
+إِذا[N]+إِذا[P] | إِذَا | when / if / suddenly | c | Starts a situation that will happen: إِذَا جَاءَ = when (it) comes.
+قَد[P] | قَدْ | indeed / already / has | c | Adds certainty or "has already": قَدْ أَفْلَحَ = has indeed succeeded.
+قَوْم[N] | قَوْم | people / nation | n | يَا قَوْمِ = O my people! (how prophets address their people).
+عَلِمَ[V] | عَلِمَ | he knew | v | يَعْلَمُ he knows, تَعْلَمُونَ you know.
+آيَة[N] | آيَة | sign / verse | n | Both a sign of Allah in the world and a verse of the Quran.
+أَنّ[P] | أَنَّ | that (a statement follows) | c | أَنَّ اللَّهَ غَفُورٌ = that Allah is Forgiving.
+كُلّ[N] | كُلّ | every / all / each | c | كُلُّ نَفْسٍ = every soul.
+لَم[P] | لَمْ | did not / has not | c | لَمْ + verb = "did not": لَمْ يَلِدْ = He did not beget.
+جَعَلَ[V] | جَعَلَ | he made / placed | v | جَعَلْنَا we made.
+ثُمّ[P] | ثُمَّ | then / after that | c | A longer pause than وَ or فَ.
+رَسُول[N] | رَسُول | messenger | n | رُسُل = messengers.
+عَذاب[N] | عَذَاب | punishment | n | عَذَابٌ عَظِيمٌ = a great punishment.
+سَماء[N] | سَمَاء | sky / heaven | n | السَّمَاوَاتُ = the heavens.
+نَفْس[N] | نَفْس | soul / self | n | أَنفُسِهِمْ = themselves.
+كَفَرَ[V] | كَفَرَ | he disbelieved / rejected | v | كَفَرُوا they disbelieved.
+شَىْء[N] | شَيْء | thing / anything | n | عَلَىٰ كُلِّ شَيْءٍ = over all things.
+أَو[P] | أَوْ | or | c
+جاءَ[V] | جَاءَ | he came | v | جَاءَهُمْ came to them.
+عَمِلَ[V] | عَمِلَ | he did / worked | v | عَمِلُوا الصَّالِحَاتِ = they did righteous deeds.
+آتَى[V] | آتَى | he gave | v | آتَيْنَاهُمْ We gave them; أُوتُوا were given.
+رَأَى[V] | رَأَى | he saw | v | تَرَى you see, يَرَوْا they see.
+بَيْن[N] | بَيْن | between / among | c | بَيْنَهُمْ = between them.
+أَتَى[V] | أَتَى | he came / it came | v | يَأْتِي it comes, أَتَىٰ came.
+كِتاب[N] | كِتَاب | book / scripture / decree | n | الْكِتَابُ often means the Quran or earlier scriptures.
+حَقّ[N] | حَقّ | truth / right / true | n | بِالْحَقِّ = with truth / rightly.
+قَبْل[N] | قَبْل | before | c | مِن قَبْلِكَ = before you.
+ناس[N] | نَاس | people / mankind | n | النَّاسُ = all people.
+إِذ[N] | إِذْ | when / (remember) when | c | Often opens a story: وَإِذْ قَالَ = and (remember) when he said.
+شاءَ[V] | شَاءَ | he willed / wished | v | يَشَاءُ He wills; لَوْ شَاءَ if He had willed.
+أَيّ[N] | أَيّ | which / any | c | يَا أَيُّهَا = O (you)!, as in يَا أَيُّهَا النَّاسُ = O people!
+مُؤْمِن[N] | مُؤْمِن | believer | n | الْمُؤْمِنِينَ = the believers.
+لَو[P] | لَوْ | if (but it did not happen) | c | لَوْ شَاءَ = if He had willed (but He didn't).
+بَعْد[N] | بَعْد | after | c | مِن بَعْدِهِ = after him.
+عِند[N] | عِنْد | with / at / in the sight of | c | عِندَ رَبِّهِمْ = with their Lord.
+خَلَقَ[V] | خَلَقَ | he created | v | خَلَقْنَاكُمْ We created you.
+أَنزَلَ[V] | أَنزَلَ | he sent down | v | أُنزِلَ was sent down.
+خَيْر[N] | خَيْر | good / better / best | n | خَيْرٌ لَكُمْ = better for you.
+كَذَّبَ[V] | كَذَّبَ | he denied / called a lie | v | كَذَّبُوا بِآيَاتِنَا = they denied Our signs.
+سَبِيل[N] | سَبِيل | way / path | n | فِي سَبِيلِ اللَّهِ = in the way of Allah.
+دَعا[V] | دَعَا | he called / prayed | v | يَدْعُونَ they call upon.
+اتَّقَى[V] | اتَّقَى | he feared Allah / was mindful of Allah | v | اتَّقُوا اللَّهَ = be mindful of Allah.
+أَمْر[N] | أَمْر | matter / command | n | أَمْرُ اللَّهِ = the command of Allah.
+مَع[N] | مَعَ | with / together with | c | مَعَكُمْ = with you.
+عَلِيم[N] | عَلِيم | All-Knowing | a | One of Allah's names.
+بَعْض[N] | بَعْض | some / each other | c | بَعْضُهُمْ بَعْضًا = some of them (with) others, i.e. each other.
+كافِر[N] | كَافِر | disbeliever | n | الْكَافِرِينَ = the disbelievers.
+ذُو[N] | ذُو | owner of / possessor of | c | ذُو الْعَرْشِ = Owner of the Throne; أُولُو الْأَلْبَابِ = people of understanding.
+آخِر[N] | آخِر | last / final | a | الْآخِرَةُ = the Hereafter.
+لَمّا[N] | لَمَّا | when / (not) yet | c | لَمَّا جَاءَهُمْ = when it came to them.
+غَيْر[N] | غَيْر | other than / not / without | c | غَيْرِ اللَّهِ = other than Allah.
+جَنَّة[N] | جَنَّة | garden / Paradise | n | جَنَّاتٌ تَجْرِي مِن تَحْتِهَا الْأَنْهَارُ = gardens beneath which rivers flow.
+إِلٰه[N] | إِلَٰه | god / deity | n | لَا إِلَٰهَ إِلَّا هُوَ = there is no god but Him.
+نار[N] | نَار | fire | n | النَّارُ = the Fire (Hell).
+هَدَى[V] | هَدَى | he guided | v | يَهْدِي He guides.
+دُون[N] | دُون | besides / other than | c | مِن دُونِ اللَّهِ = besides Allah.
+حَتَّى[P] | حَتَّىٰ | until / so that | c
+أَرادَ[V] | أَرَادَ | he wanted / intended | v | يُرِيدُ He wants.
+أَم[P] | أَمْ | or (in a question) | c
+مُوسَى[N] | مُوسَىٰ | Musa (Moses) | p | The prophet mentioned most often in the Quran.
+اتَّبَعَ[V] | اتَّبَعَ | he followed | v | اتَّبِعُوا = follow!
+قَلْب[N] | قَلْب | heart | n | قُلُوبِهِمْ = their hearts.
+عَبْد[N] | عَبْد | servant / slave (of Allah) | n | عِبَادِي = My servants.
+أَرْسَلَ[V] | أَرْسَلَ | he sent | v | أَرْسَلْنَا We sent.
+لَعَلّ[P] | لَعَلَّ | perhaps / so that you may | c | لَعَلَّكُمْ تَتَّقُونَ = so that you may be mindful.
+ظالِم[N] | ظَالِم | wrongdoer | n | الظَّالِمِينَ = the wrongdoers.
+أَخَذَ[V] | أَخَذَ | he took / seized | v | أَخَذْنَاهُمْ We seized them.
+بَل[P] | بَلْ | nay / rather | c | Corrects what was just said.
+أَهْل[N] | أَهْل | people of / family of | n | أَهْلُ الْكِتَابِ = People of the Book.
+اتَّخَذَ[V] | اتَّخَذَ | he took (as) / adopted | v | اتَّخَذُوا they took (as).
+عَبَدَ[V] | عَبَدَ | he worshipped | v | نَعْبُدُ we worship.
+يَد[N] | يَد | hand | n | أَيْدِيهِمْ = their hands.
+مُبِين[N] | مُبِين | clear / evident | a | كِتَابٌ مُبِينٌ = a clear book.
+رَحِيم[N] | رَحِيم | Most Merciful | a | One of Allah's names, often paired with غَفُور.
+دُنْيا[N] | دُنْيَا | this world / the nearer life | n | الْحَيَاةُ الدُّنْيَا = the life of this world.
+رَحْمَة[N] | رَحْمَة | mercy | n | رَحْمَةُ اللَّهِ = the mercy of Allah.
+ظَلَمَ[V] | ظَلَمَ | he wronged / was unjust | v | ظَلَمُوا أَنفُسَهُمْ = they wronged themselves.
+عَظِيم[N] | عَظِيم | great / mighty | a | عَذَابٌ عَظِيمٌ = a great punishment.
+سَأَلَ[V] | سَأَلَ | he asked | v | يَسْأَلُونَكَ = they ask you.
+وَجَدَ[V] | وَجَدَ | he found | v | وَجَدُوا they found.
+عِلْم[N] | عِلْم | knowledge | n | بِغَيْرِ عِلْمٍ = without knowledge.
+أَجْر[N] | أَجْر | reward | n | أَجْرٌ عَظِيمٌ = a great reward.
+لَن[P] | لَنْ | will never / will not | c | A strong "never" about the future.
+عَزِيز[N] | عَزِيز | Almighty / mighty | a | One of Allah's names.
+أَخْرَجَ[V] | أَخْرَجَ | he brought out / drove out | v | أَخْرَجَ مِنَ = brought out of.
+حَكِيم[N] | حَكِيم | All-Wise | a | One of Allah's names, often with عَزِيز.
+أَكَلَ[V] | أَكَلَ | he ate | v | كُلُوا = eat!
+هَل[P] | هَلْ | is it that...? / do...? | c | Starts a yes/no question.
+دِين[N] | دِين | religion / the Judgement | n | يَوْمِ الدِّينِ = the Day of Judgement.
+قَوْل[N] | قَوْل | saying / speech | n | قَوْلًا = a word / saying.
+غَفُور[N] | غَفُور | Oft-Forgiving | a | One of Allah's names.
+لَيْسَ[V] | لَيْسَ | is not / are not | c | لَيْسَ كَمِثْلِهِ شَيْءٌ = nothing is like Him.
+شَيْطان[N] | شَيْطَان | Satan / devil | n | الشَّيْطَانُ = Satan.
+مَثَل[N] | مَثَل | example / parable | n | ضَرَبَ اللَّهُ مَثَلًا = Allah sets forth a parable.
+فَعَلَ[V] | فَعَلَ | he did | v | يَفْعَلُونَ they do.
+مَلَك[N] | مَلَك | angel | n | الْمَلَائِكَةُ = the angels.
+نَظَرَ[V] | نَظَرَ | he looked / considered | v | انظُرْ = look!, فَانظُرُوا = so look.
+وَلِيّ[N] | وَلِيّ | protector / ally | n | اللَّهُ وَلِيُّ الَّذِينَ آمَنُوا = Allah is the protector of those who believe.
+مال[N] | مَال | wealth / property | n | أَمْوَالُهُمْ = their wealth.
+هُدًى[N] | هُدًى | guidance | n | هُدًى لِلْمُتَّقِينَ = guidance for the mindful.
+ذَكَرَ[V] | ذَكَرَ | he remembered / mentioned | v | اذْكُرُوا = remember!
+فَضْل[N] | فَضْل | bounty / favour | n | مِن فَضْلِهِ = from His bounty.
+لَيْل[N] | لَيْل | night | n | اللَّيْلِ وَالنَّهَارِ = the night and the day.
+صَلاة[N] | صَلَاة | prayer (salah) | n | أَقِيمُوا الصَّلَاةَ = establish the prayer.
+كَيْف[N] | كَيْفَ | how | c | كَيْفَ كَانَ = how was...
+قَتَلَ[V] | قَتَلَ | he killed | v | قُتِلَ was killed.
+خافَ[V] | خَافَ | he feared | v | لَا تَخَافُوا = do not fear.
+أَوَّل[N] | أَوَّل | first | a | أَوَّلَ مَرَّةٍ = the first time.
+أَكْثَر[N] | أَكْثَر | most / more | a | أَكْثَرُهُمْ = most of them.
+رَجَعَ[V] | رَجَعَ | he returned | v | تُرْجَعُونَ = you will be returned.
+أَصْحاب[N] | أَصْحَاب | companions / people of | n | أَصْحَابُ النَّارِ = the people of the Fire.
+تَوَلَّى[V] | تَوَلَّى | he turned away | v | تَوَلَّوْا they turned away.
+سَمِعَ[V] | سَمِعَ | he heard | v | سَمِعْنَا we heard.
+أَمَرَ[V] | أَمَرَ | he commanded | v | أَمَرَ بِ = commanded (to do).
+جَهَنَّم[N] | جَهَنَّم | Hell (Jahannam) | n
+زَوْج[N] | زَوْج | spouse / pair | n | أَزْوَاجٌ = spouses.
+دَخَلَ[V] | دَخَلَ | he entered | v | ادْخُلُوا = enter!
+حَياة[N] | حَيَاة | life | n | الْحَيَاةُ الدُّنْيَا = the life of this world.
+ذِكْر[N] | ذِكْر | remembrance / reminder | n | Also used for the Quran itself.
+مِثْل[N] | مِثْل | like / the like of | c | مِثْلَهُمْ = like them.
+نَبِيّ[N] | نَبِيّ | prophet | n | النَّبِيُّ = the Prophet.
+لَوْلا[P] | لَوْلَا | if not for / why not | c | Two uses: "if it were not for..." and "why not...?"
+أَخ[N] | أَخ | brother | n | أَخُوهُمْ = their brother.
+خالِد[N] | خَالِد | abiding forever | a | خَالِدِينَ فِيهَا = abiding in it forever.
+فِرْعَوْن[N] | فِرْعَوْن | Pharaoh | p
+صالِح[N]+صالِحَة[N] | صَالِح | righteous / good | a | الصَّالِحَاتِ = righteous deeds.
+أَحَد[N] | أَحَد | one / anyone | c | قُلْ هُوَ اللَّهُ أَحَدٌ = Say: He is Allah, One.
