@@ -254,6 +254,13 @@ export class Engine {
       const st = this.passageStats(focus);
       if (st.missing.length) return { col: focus, st, score: 9, chosen: true };
     }
+    // otherwise the passage the current unit of the path is building towards
+    const cur = this.currentLesson();
+    const goal = cur && this.lex.units[cur.unit].g && this.lex.collectionById.get(this.lex.units[cur.unit].g);
+    if (goal && this.state.passages[goal.id] === undefined) {
+      const st = this.passageStats(goal);
+      if (st.missing.length) return { col: goal, st, score: 8, chosen: false };
+    }
     return best;
   }
 
@@ -447,10 +454,11 @@ export class Engine {
    * The default "Today" session: reviews that are due + the next new words + a verse to read.
    * Sized to the daily goal; when many reviews are waiting, fewer new words are introduced.
    */
-  planDaily({ bonus = false } = {}) {
+  planDaily({ bonus = false, quick = false } = {}) {
     const s = this.state;
     const goal = GOALS[s.settings.goalMin] || GOALS[5];
-    const budget = (bonus ? Math.max(120, s.settings.goalMin * 60 * 0.6) : s.settings.goalMin * 60) - COST.verse - COST.match;
+    const total = quick ? 110 : bonus ? Math.max(120, s.settings.goalMin * 60 * 0.6) : s.settings.goalMin * 60;
+    const budget = total - COST.verse - COST.match;
     const due = this.dueCards().map((d) => d.id);
     // reviews first, but never more than ~55% of the time so new words keep flowing
     const reviewIds = [];
@@ -462,7 +470,9 @@ export class Engine {
       spent += cost;
     }
     const learning = this.learningCards();
-    const baseNew = bonus ? Math.max(3, Math.round(goal.new / 2)) : Math.max(0, goal.new - this.introducedToday());
+    const baseNew = quick
+      ? Math.min(2, Math.max(0, goal.new - this.introducedToday()) || 1)
+      : bonus ? Math.max(3, Math.round(goal.new / 2)) : Math.max(0, goal.new - this.introducedToday());
     const affordable = Math.floor(Math.max(0, budget - spent) / COST.newCard);
     // a big backlog means: catch up first
     const backlogPenalty = due.length > reviewIds.length * 2 && due.length > 40 ? 0 : 1;
@@ -480,7 +490,7 @@ export class Engine {
     if (!steps.length) return this.planPractice();
     const capVerse = newIds.length ? this.pickCapstone(newIds) : null;
     if (capVerse !== null) steps.push({ t: 'verse', v: capVerse });
-    return this._finish('daily', bonus ? 'Bonus round' : 'Today', steps, { newIds, dueCount: due.length });
+    return this._finish('daily', quick ? 'Quick session' : bonus ? 'Bonus round' : 'Today', steps, { newIds, dueCount: due.length });
   }
 
   /** Nothing is due and nothing is new: practise the shakiest known words. */
@@ -638,6 +648,28 @@ export class Engine {
     if (keys.length > 420) for (const k of keys.sort((a, b) => a - b).slice(0, keys.length - 400)) delete this.state.daily[k];
   }
 
+  /** Bank a finished speed round (counts towards today's practice time and the best score). */
+  recordSpeed({ score, miss, sec }) {
+    const st = this.state;
+    const prevBest = st.stats.bestSpeed;
+    const xp = this.addXp(score * XP.speed);
+    this.addActivity({ sec, xp, n: score + miss, ok: score });
+    st.stats.bestSpeed = Math.max(prevBest, score);
+    const had = st.streak.last === this.today();
+    let streakExtended = false;
+    if (this.goalProgress().done && !had) streakExtended = this._registerGoalDay(this.today());
+    this.touch();
+    const achievements = this.checkAchievements({});
+    this.store.emit();
+    this.store.flush();
+    return { xp, newBest: score > prevBest && score > 0, best: st.stats.bestSpeed, streakExtended, achievements };
+  }
+
+  /** Cards the learner knows, as a list of ids (speed rounds draw from it). */
+  knownIds() {
+    return Object.keys(this.state.cards).filter((id) => srs.isKnown(this.state.cards[id])).map(Number);
+  }
+
   // ------------------------------------------------------------------ misc helpers for the UI
 
   verseOfTheDay() {
@@ -779,6 +811,13 @@ export class Session {
 
   get done() {
     return this.pos >= this.queue.length;
+  }
+
+  /** Drop the current step without counting it (e.g. its verse could not be loaded). */
+  skip(nowMs = Date.now()) {
+    this.queue.splice(this.pos, 1);
+    this.total = Math.max(this.pos, this.total - 1);
+    this.stepStart = nowMs;
   }
 
   /** Close the session: bank XP, time, streak and achievements. Returns what to celebrate. */

@@ -1,5 +1,6 @@
 import { html, useEffect, useRef, useState } from './h.js';
 import { Icon } from './icons.js';
+import { useBack } from './back.js';
 import { glossParts } from '../core/util.js';
 import { LEVEL_NAMES } from '../core/srs.js';
 
@@ -25,8 +26,14 @@ export function Switch({ on, onChange, label }) {
 }
 
 export function Sheet({ onClose, children }) {
+  useBack(() => { onClose(); return true; });
   return html`<div class="backdrop" onClick=${onClose}></div>
     <div class="sheet" role="dialog"><div class="grab"></div>${children}</div>`;
+}
+
+/** A small coloured dot for how well a word is known: known / learning / new. */
+export function StateDot({ state }) {
+  return html`<span class="sdot ${state}" title=${state}></span>`;
 }
 
 export function Gloss({ g }) {
@@ -48,7 +55,7 @@ export function CatTag({ c }) {
  * A verse as tappable words. `data` = per-surah verse entry {t, w}. Words carry their learning state so the
  * learner can see at a glance what they know.
  */
-export function VerseWords({ vi, data, engine, opts, onWord, target = -1, gap = -1, center = false, peek = null }) {
+export function VerseWords({ vi, data, engine, opts, onWord, target = -1, gap = -1, conceal = -1, center = false, peek = null }) {
   const lex = engine.lex;
   const t0 = lex.offsets[vi];
   const hints = opts.hints;
@@ -58,7 +65,7 @@ export function VerseWords({ vi, data, engine, opts, onWord, target = -1, gap = 
       const st = engine.wordState(ti);
       const conn = opts.tint && engine.isConnecting(ti);
       const open = peek && peek.has(i);
-      const showGloss = (hints === 'all' ? true : hints === 'unknown' ? st !== 'known' : false) || open;
+      const showGloss = ((hints === 'all' ? true : hints === 'unknown' ? st !== 'known' : false) && i !== conceal) || open;
       const isGap = i === gap;
       return html`<span class="wrap" key=${i}>
         <button class="w ${st} ${conn ? 'conn' : ''} ${i === target ? 'target' : ''} ${isGap ? 'gap' : ''} ${open ? 'open' : ''}" onClick=${() => onWord(i, ti, w)}>
