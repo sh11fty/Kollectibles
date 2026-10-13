@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Android 11 and older: Google's automatic app backup keeps only the learner's progress
-     (the web app stores it in the WebView's localStorage), so reinstalling or moving to a new phone restores it. -->
-<full-backup-content>
-    <include domain="root" path="app_webview/Default/Local Storage" />
-</full-backup-content>
