@@ -14,8 +14,6 @@ export function SettingRow({ label, sub, children }) {
   </div>`;
 }
 
-export const SIZE_NAMES = ['Smaller', 'Small', 'Medium', 'Large', 'Huge'];
-
 /** The settings that change how verses look. */
 export function ReadingOptionsBody() {
   const app = useApp();
@@ -28,7 +26,7 @@ export function ReadingOptionsBody() {
     </div>
     <div class="stack-sm">
       <div class="caps">Text size</div>
-      <${Seg} value=${s.script} onChange=${(v) => app.setSetting('script', v)} options=${SIZE_NAMES.map((n, i) => [i, n.replace('Smaller', 'XS').replace('Small', 'S').replace('Medium', 'M').replace('Large', 'L').replace('Huge', 'XL')])} />
+      <${Seg} value=${s.script} onChange=${(v) => app.setSetting('script', v)} options=${[[0, 'Small'], [1, 'Normal'], [2, 'Large'], [3, 'XL'], [4, 'XXL']]} />
     </div>
     <div class="list">
       <${SettingRow} label="Show pronunciation" sub="Letters like “bismi” under each word"><${Switch} on=${s.translit} onChange=${(v) => app.setSetting('translit', v)} label="Pronunciation" /><//>

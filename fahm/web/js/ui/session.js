@@ -71,7 +71,7 @@ function ContextStep({ ex, res, onPick, engine }) {
     <div class="caps center">${ex.heading}</div>
     <div class="card verse-card" style=${{ marginTop: '14px' }}>
       <${VerseWords} vi=${ex.verse} data=${{ w: ex.words }} engine=${engine} opts=${{ hints: 'all', tint: false, translit: false }}
-        target=${cloze ? -1 : ex.wordIndex} gap=${cloze && !res ? ex.wordIndex : -1} conceal=${res ? -1 : ex.wordIndex} center=${true} onWord=${() => {}} />
+        target=${cloze ? -1 : ex.wordIndex} gap=${cloze && !res ? ex.wordIndex : -1} conceal=${res ? -1 : ex.wordIndex} center=${true} compact=${true} onWord=${() => {}} />
       ${cloze && !res && ex.hint ? html`<div class="center small muted">Hint: ${ex.hint}</div>` : null}
       ${res ? html`<div class="small muted center sel" style=${{ marginTop: '6px' }}>${ex.translation}</div>` : null}
     </div>
@@ -134,7 +134,7 @@ function VerseStep({ ex, res, onPick, engine, settings }) {
   return html`<div class="fill">
     <div class="caps center">Read a real verse · ${lex.chapters[s - 1].en} ${s}:${a}</div>
     <div class="card verse-card" style=${{ marginTop: '12px' }}>
-      <${VerseWords} vi=${ex.verse} data=${{ w: ex.words }} engine=${engine} opts=${{ hints: settings.hints === 'all' ? 'all' : 'none', tint: settings.tint, translit: false }} peek=${peek} center=${true} onWord=${toggle} />
+      <${VerseWords} vi=${ex.verse} data=${{ w: ex.words }} engine=${engine} opts=${{ hints: settings.hints === 'all' ? 'all' : 'none', tint: settings.tint, translit: false }} peek=${peek} center=${true} compact=${true} onWord=${toggle} />
       <div class="center tiny faint">Tap a word if you need a hint</div>
     </div>
     <div class="caps center" style=${{ marginTop: '16px' }}>${ex.heading}</div>

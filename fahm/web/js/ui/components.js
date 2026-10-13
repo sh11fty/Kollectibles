@@ -55,11 +55,11 @@ export function CatTag({ c }) {
  * A verse as tappable words. `data` = per-surah verse entry {t, w}. Words carry their learning state so the
  * learner can see at a glance what they know.
  */
-export function VerseWords({ vi, data, engine, opts, onWord, target = -1, gap = -1, conceal = -1, center = false, peek = null }) {
+export function VerseWords({ vi, data, engine, opts, onWord, target = -1, gap = -1, conceal = -1, center = false, compact = false, peek = null }) {
   const lex = engine.lex;
   const t0 = lex.offsets[vi];
   const hints = opts.hints;
-  return html`<div class="verse ${center ? 'center' : ''}" lang="ar">
+  return html`<div class="verse ${center ? 'center' : ''} ${compact ? 'compact' : ''}" lang="ar">
     ${data.w.map((w, i) => {
       const ti = t0 + i;
       const st = engine.wordState(ti);
